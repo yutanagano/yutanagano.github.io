@@ -11,7 +11,7 @@
 }
 
 #home-banner .image-container {
-    width: 60%;
+    width: 900px;
 
     border-radius: 5rem 1rem;
     
@@ -19,10 +19,25 @@
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+
+    box-shadow: 0 0 1rem var(--shadow);
 }
 
-#home-banner .text-container {
-    width: calc(40% - 2rem);
+#home-banner .mobile.text-container {
+    height: calc(100% - 4rem);
+    padding: 2rem;
+    border-radius: 5rem 1rem;
+
+    color: white;
+    background-color: rgba(0,0,0,0.5);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+#home-banner .desktop.text-container {
+    width: calc(600px - 2rem);
     padding-left: 2rem;
 
     display: flex;
@@ -35,6 +50,18 @@
     line-height: 1.2em;
 }
 
+@media screen and (max-width: 1200px) {
+    #home-banner h1 {
+        font-size: 4rem;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    #home-banner {
+        height: 500px;
+    }
+}
+
 /* about me */
 
 .card-grid {
@@ -42,6 +69,7 @@
     margin: 2rem auto;
     padding: 0 2rem;
 
+    display: grid;
     grid-template-areas:
         'med-ed research'
         'coming-soon research';
@@ -57,4 +85,15 @@
 
 #coming-soon {
     grid-area: coming-soon;
+}
+
+@media screen and (max-width: 800px) {
+    .card-grid {
+        display: block;
+        margin: 0;
+    }
+
+    .card-grid .card {
+        margin: 2rem 0;
+    }
 }
