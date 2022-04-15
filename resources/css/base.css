@@ -20,9 +20,7 @@
     --b-dark: #206491;
 
     --shadow: rgba(0,0,0,0.2);
-}
 
-html {
     font-size: 14pt;
     font-family: 'Karla', sans-serif;
 }
@@ -166,7 +164,7 @@ footer {
 }
 
 @media screen and (max-width: 1000px) {
-    html {
+    :root {
         font-size: 12pt;
     }
     
