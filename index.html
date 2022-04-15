@@ -2,42 +2,63 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="index.css" type="text/css" rel="stylesheet">
-    <title>Yuta Nagano - Medic, Biomedical Scientist, Data Scientist</title>
+    <link rel="stylesheet" href="./resources/css/base.css">
+    <link rel="stylesheet" href="./resources/css/index.css">
+    <title>Yuta Nagano</title>
 </head>
 <body>
-
-    <!-- Header with photo and "YUTA NAGANO" text -->
+    <!-- header -->
     <header>
-        <img class="cover-image" src="./resources/cover.JPG" />
-        <div class="cover-text">YUTA NAGANO</div>
-        <div class="cover-tagline">Full website coming soon!</div>
+        <div class="container">
+            <div id="logo">
+                <a href="#">Yuta Nagano</a>
+            </div>
+            <ul id="nav-bar">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </div>
     </header>
 
+    <!-- main content -->
     <main>
+        <!-- home banner -->
+        <div id="home-banner">
+            <div class="image-container"></div>
+            <div class="text-container">
+                <h1>Hi, I'm <span class="emphasis">Yuta</span>.</h1>
+                <p>I'm a medical student, and also a PhD student researching computational immunology.</p>
+            </div>
+        </div>
 
-        <!-- Banner underneath advertising my three main domains: medicine, biomedical science and data science -->
-        <section class="home-banner">
-            <div class="home-banner-element">
-                <div class="logo-container"><img src="./resources/laptop-code-solid.svg" alt=""></div>
-                <h2>Data Science</h2>
+        <!-- about me -->
+        <div class="card-grid">
+            <div id="medical-education" class="card">
+                <h2>Medical education</h2>
+                <p>
+                    I am obtaining my medical education at <a href="www.ucl.ac.uk">University College London</a>.
+                    This is currently on pause however, while I conduct my PhD.
+                </p>
             </div>
-            <div class="home-banner-element">
-                <div class="logo-container"><img src="./resources/stethoscope-solid.svg" alt=""></div>
-                <h2>Medicine</h2>
+            <div id="research-interests" class="card">
+                <h2>Research interests</h2>
+                <p>
+                    My current research focuses on developing a machine learning algorithm that can understand the relationship between the amino acid sequences underlying T-cell receptors (TCRs) and their epitope specificities.
+                    My hope is to build such a model and apply it in the investigation of the anti-tumour immune response.
+                    For my research/PhD, I work under the supervision of <a href="https://iris.ucl.ac.uk/iris/browse/profile?upi=BMCHA43">Prof. Benny Chain</a> (<a href="www.ucl.ac.uk">UCL</a>) and <a href="https://www.cancerresearchuk.org/our-research/researchers/dr-sergio-quezada">Prof. Sergio Quezada</a> (<a href="https://www.ucl.ac.uk/cancer/">UCL Cancer Institute</a>).
+                </p>
             </div>
-            <div class="home-banner-element">
-                <div class="logo-container"><img src="./resources/microscope-solid.svg" alt=""></div>
-                <h2>Biomedical Science</h2>
+            <div id="coming-soon" class="accent card">
+                <h2>More coming soon!</h2>
             </div>
-        </section>
+        </div>
 
+        <!-- footer -->
+        <footer>
+            <p>© Yuta Nagano</p>
+        </footer>
     </main>
-
-    <!-- Footer saying "More Coming Soon!"-->
-    <footer>
-        <h3>More coming soon!</h3>
-    </footer>
 </body>
 </html>

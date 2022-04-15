@@ -1,0 +1,133 @@
+/* general settings */
+
+@import url('https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,400;0,700;1,400;1,700&family=Rubik:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+:root {
+    --custom-grey: #eeeef3;
+    --custom-purple: #5a00ff;
+}
+
+html {
+    font-size: 16pt;
+    font-family: 'Karla', sans-serif;
+}
+
+body, h1, h2, p {
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    font-family: 'Rubik', sans-serif;
+    font-size: 6rem;
+    font-weight: normal;
+    padding-bottom: 1rem;
+}
+
+h2 {
+    font-family: 'Rubik', sans-serif;
+    font-size: 2rem;
+    font-weight: bold;
+    padding-bottom: 1rem;
+}
+
+p {
+    line-height: 1.5em;
+}
+
+a {
+    color: inherit;
+    font-weight: bold;
+    font-style: italic;
+    text-decoration: underline;
+}
+
+.emphasis {
+    color: var(--custom-purple);
+    font-weight: bold;
+}
+
+.card-grid {
+    display: grid;
+    gap: 2rem;
+}
+
+.card {
+    padding: 2rem;
+    border-radius: 1rem;
+
+    background-color: var(--custom-grey);
+}
+
+.card h2 {
+    color: var(--custom-purple);
+}
+
+.card.accent {
+    background-color: var(--custom-purple);
+}
+
+.card.accent h2 {
+    color: white;
+}
+
+/* header */
+
+header {
+    position: fixed;
+    height: 4rem;
+    width: 100%;
+
+    background-color: white;
+    border-bottom: 2px solid var(--custom-grey);
+
+    z-index: 10;
+}
+
+header .container {
+    height: 100%;
+    max-width: 1500px;
+    margin: 0 auto;
+    padding: 0 5rem;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#logo a {
+    font-family: 'Rubik', sans-serif;
+    font-style: normal;
+    text-decoration: none;
+}
+
+#nav-bar {
+    display: flex;
+}
+
+#nav-bar li {
+    display: block;
+    margin-left: 1rem;
+}
+
+#nav-bar li a {
+    font-style: normal;
+    text-decoration: none;
+}
+
+/* main body (nudge down accounting for header) */
+
+main {
+    position: relative;
+    top: 4rem;
+}
+
+/* footer */
+
+footer {
+    height: 3rem;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

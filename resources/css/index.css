@@ -1,0 +1,60 @@
+/* home page banner */
+
+#home-banner {
+    height: 600px;
+    max-width: 1500px;
+    margin: 0 auto;
+    padding: 2rem 2rem 0;
+
+    display: flex;
+    justify-content: center;
+}
+
+#home-banner .image-container {
+    width: 60%;
+
+    border-radius: 5rem 1rem;
+    
+    background-image: url('../images/cover.JPG');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#home-banner .text-container {
+    width: calc(40% - 2rem);
+    padding-left: 2rem;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+#home-banner p {
+    font-size: 2rem;
+    line-height: 1.2em;
+}
+
+/* about me */
+
+.card-grid {
+    max-width: 1250px;
+    margin: 2rem auto;
+    padding: 0 2rem;
+
+    grid-template-areas:
+        'med-ed research'
+        'coming-soon research';
+}
+
+#medical-education {
+    grid-area: med-ed;
+}
+
+#research-interests {
+    grid-area: research;
+}
+
+#coming-soon {
+    grid-area: coming-soon;
+}
