@@ -65,6 +65,7 @@ a {
 
 .card.accent {
     background-color: var(--custom-purple);
+    color: white;
 }
 
 .card.accent h2 {
