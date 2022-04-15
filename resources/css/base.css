@@ -166,13 +166,11 @@ footer {
 }
 
 @media screen and (max-width: 1000px) {
-    .desktop {
-        display: none !important;
-    }
-}
-
-@media screen and (max-width: 600px) {
     html {
         font-size: 12pt;
+    }
+    
+    .desktop {
+        display: none !important;
     }
 }
