@@ -65,17 +65,25 @@ a {
 }
 
 .card-grid {
+    max-width: 1250px;
+    margin: 0 auto 2rem;
+
     display: grid;
     gap: 2rem;
 }
 
 .card {
+    margin-bottom: 2rem;
     padding: 2rem;
     border-radius: 1rem;
 
     background-color: white;
 
     box-shadow: 0 0 1rem var(--shadow);
+}
+
+.card-grid .card {
+    margin: 0;
 }
 
 .card h2 {
@@ -162,6 +170,8 @@ header nav a.current {
 main {
     position: relative;
     top: 4rem;
+    max-width: 1500px;
+    margin: 0 auto;
     padding: 2em 2em 0;
 }
 
@@ -186,5 +196,13 @@ footer {
 @media screen and (max-width: 800px) {
     #logo p {
         display: none;
+    }
+
+    .card-grid {
+        display: block;
+    }
+
+    .card-grid .card {
+        margin-bottom: 2rem;
     }
 }
