@@ -22,7 +22,7 @@ function enableDarkMode() {
 
     root.style.setProperty('--shadow', 'rgba(0,0,0,0.5)');
 
-    logo.src = './resources/images/yn_logo_white.svg';
+    logo.src = '/resources/images/yn_logo_white.svg';
 }
 
 function disableDarkMode() {
@@ -44,7 +44,7 @@ function disableDarkMode() {
 
     root.style.setProperty('--shadow', 'rgba(0,0,0,0.2)');
 
-    logo.src = './resources/images/yn_logo_black.svg';
+    logo.src = '/resources/images/yn_logo_black.svg';
 }
 
 if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
