@@ -1,0 +1,69 @@
+baseurl = "http://www.yutanagano.com"
+title = "Yuta Nagano"
+theme = "hugo-coder"
+languagecode = "en"
+defaultcontentlanguage = "en"
+
+paginate = 20
+
+disqusShortname = "yourdiscussshortname"
+
+[markup.highlight]
+style = "github-dark"
+
+[params]
+  author = "Yuta Nagano"
+  info = "Medical Student, Immunology & Machine Learning PhD Student"
+  description = "Yuta's Personal Site"
+  keywords = "student,academic,machine,learning,quantitative,immunology,medicine"
+  avatarurl = "images/avatar.jpg"
+  #gravatar = "john.doe@example.com"
+
+  # faviconSVG = "/img/favicon.svg"
+  # favicon_32 = "/img/favicon-32x32.png"
+  # favicon_16 = "/img/favicon-16x16.png"
+
+  # since = 2023
+
+  # enableTwemoji = true
+
+  colorScheme = "auto"
+  hidecolorschemetoggle = false
+
+  # customCSS = ["css/custom.css"]
+  # customSCSS = ["scss/custom.scss"]
+  # customJS = ["js/custom.js"]
+
+[taxonomies]
+  category = "categories"
+  series = "series"
+  tag = "tags"
+  author = "authors"
+
+# Social links
+[[params.social]]
+  name = "Github"
+  icon = "fa fa-github fa-2x"
+  weight = 1
+  url = "https://github.com/yutanagano/"
+[[params.social]]
+  name = "Twitter"
+  icon = "fa fa-twitter fa-2x"
+  weight = 3
+  url = "https://twitter.com/yutanotutah/"
+
+# Menu links
+[[menu.main]]
+  name = "CV"
+  weight = 1
+  url = "cv"
+
+[[menu.main]]
+  name = "Publications"
+  weight = 2
+  url = "publications"
+
+[[menu.main]]
+  name = "Software"
+  weight = 3
+  url = "software"
