@@ -12,10 +12,10 @@ disqusShortname = "yourdiscussshortname"
 style = "github-dark"
 
 [params]
-  author = "Yuta Nagano"
-  info = "Medical Student, Immunology & Machine Learning PhD Student"
+  author = "Yuta Nagano PhD"
+  info = "Quantitative Immunology, Machine Learning, Medical Student"
   description = "Yuta's Personal Site"
-  keywords = "student,academic,machine,learning,quantitative,immunology,medicine"
+  keywords = "student,academic,applied,mathematics,machine,learning,quantitative,immunology,medicine"
   avatarurl = "images/avatar.jpg"
   #gravatar = "john.doe@example.com"
 
