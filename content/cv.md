@@ -6,12 +6,12 @@ draft = false
 
 ## Education
 
-| Year | Programme | Institution |
-|---|---|---|
-| 2017-2026 | **MBBS** | University College London |
-| 2021-2024 | **PhD**, Computational Immunology & Machine Learning | University College London |
-| 2019-2020 | **BSc** Immunology, Infection and Cell Pathology | University College London |
-| 2015-2017 | **International Baccalaureate** | ACS International School Cobham |
+| Year      | Programme                                            | Institution                     |
+| ---       | ---                                                  | ---                             |
+| 2017-2026 | **MBBS**                                             | University College London       |
+| 2021-2024 | **PhD**, Computational Immunology & Machine Learning | University College London       |
+| 2019-2020 | **BSc** Immunology, Infection and Cell Pathology     | University College London       |
+| 2015-2017 | **International Baccalaureate**                      | ACS International School Cobham |
 
 ## Academic achievements
 
@@ -20,6 +20,9 @@ draft = false
 - Awarded [**Cancer Research UK**](https://donate.cancerresearchuk.org) [**City of London**](https://www.colcc.ac.uk/) **MBPhD studentship** to fund PhD programme
 - Member of the [**Masason Foundation**](https://masason-foundation.org/en/) scholarship programme
 - **Heller bursary** scholarship for studying the French Language
+
+### PhD
+- **IJEP Woolf Prize** for PhD research presentation (2024)
 
 ### MBBS
 
