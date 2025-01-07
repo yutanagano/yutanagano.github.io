@@ -4,9 +4,11 @@ date = 2023-12-02T15:40:54Z
 draft = false
 +++
 
-[**Contrastive learning of T cell receptor representations**](https://arxiv.org/abs/2406.06397) Yuta Nagano, Andrew G.T. Pyo, Martina Milighetti, James Henderson, John Shawe-Taylor, Benny Chain, Andreas Tiffeau-Mayer, arxiv.org (2024)
+[**Contrastive learning of T cell receptor representations**](https://www.sciencedirect.com/science/article/pii/S2405471224003697) Yuta Nagano, Andrew G.T. Pyo, Martina Milighetti, James Henderson, John Shawe-Taylor, Benny Chain, Andreas Tiffeau-Mayer, Cell Systems (2024)
 
 [**Data-driven Discovery of Biophysical T Cell Receptor Co-specificity Rules**](https://arxiv.org/abs/2412.13722) Andrew G.T. Pyo, Yuta Nagano, Martina Milighetti, James Henderson, Curtis G. Callan Jr., Benny Chain, Ned S. Wingreen, Andreas Tiffeau-Mayer, arxiv.org (2024)
+
+[**Overcoming data bottlenecks in T cell receptor specificity prediction with effective machine learning**](https://discovery.ucl.ac.uk/id/eprint/10200813/) Yuta Nagano, UCL (2024)
 
 [**Intra- and inter-chain contacts determine TCR specificity: applying protein co-evolution methods to TCRαβ pairing**](https://www.biorxiv.org/content/10.1101/2024.05.24.595718v1) Martina Milighetti, Yuta Nagano, James Henderson, Uri Hershberg, Andreas Tiffeau-Mayer, Anne-Florence Bitbol, Benny Chain, biorxiv.org (2024)
 
