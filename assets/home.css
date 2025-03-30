@@ -13,7 +13,7 @@
 
     border-radius: 5rem 1rem;
     
-    background-image: url('../images/cover.JPG');
+    background-image: url("/images/avatar.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
