@@ -1,31 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    {{ $styleBase := resources.Get "base.css" }}
-    <link rel="stylesheet" href="{{ $styleBase.Permalink }}">
-    {{ $styleHome := resources.Get "home.css" }}
-    <link rel="stylesheet" href="{{ $styleHome.Permalink }}">
-    <script src="https://kit.fontawesome.com/87353f4e18.js" crossorigin="anonymous"></script>
-    <script src="/resources/scripts/dark_mode.js" defer></script>
-    <title>Yuta Nagano: Home</title>
+    {{ partial "head.html" }}
   </head>
   <body>
-    <header>
-      <div class="container">
-        <a href="#" id="logo">
-          <img src="/resources/images/yn_logo_black.svg">
-          <p>Yuta Nagano</p>
-        </a>
-        <nav>
-          <a class="current" href="#">Home</a>
-          <a href="/work">Work</a>
-          <a href="/contact">Contact</a>
-        </nav>
-      </div>
-    </header>
+    {{ partial "nav.html" }}
     <main>
       <div id="home-banner">
         <div class="image-container">
