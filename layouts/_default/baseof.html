@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    {{ partial "meta.html" }}
+  </head>
+  <body>
+    <header>
+      {{ partial "nav.html" }}
+    </header>
+    <main>
+      {{ block "main" . }}{{ end }}
+    </main>
+    <footer>
+      <p>© Yuta Nagano</p>
+    </footer>
+  </body>
+</html>
