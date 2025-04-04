@@ -1,9 +1,17 @@
 {{ define "main" }}
-{{ $dp := resources.Get "images/avatar.jpg" }}
-<img src="{{ $dp.Permalink }}" alt="Image of Yuta Nagano">
-<h1>Hi, I'm Yuta Nagano</h1>
-<p>
-  I'm a medical student and postdoctorate researcher interested in mathematical modelling for biomedicine.
+{{ $dp := resources.Get "images/avatar2.jpeg" }}
+<div id="landing-container">
+  <img
+    src="{{ $dp.Permalink }}"
+    alt="Image of Yuta Nagano"
+    id="profile"
+  >
+  <div id="text-container">
+    <h1>Hi, I'm Yuta Nagano</h1>
+    <p>
+      I'm a medical student and postdoctorate researcher interested in mathematical modelling for biomedicine.
   I am currently working on machine learning methods to decode the underlying rules of the human T cell immune response.
-</p>
+    </p>
+  </div>
+</div>
 {{ end }}
