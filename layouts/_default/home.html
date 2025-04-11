@@ -1,5 +1,5 @@
 {{ define "main" }}
-{{ $dp := resources.Get "images/avatar2.jpeg" }}
+{{ $dp := resources.Get "images/avatar.jpg" }}
 <div id="landing-container">
   <img
     src="{{ $dp.Permalink }}"
@@ -7,11 +7,10 @@
     id="profile"
   >
   <div id="text-container">
-    <h1>Hi, I'm Yuta Nagano</h1>
-    <p>
-      I'm a medical student and postdoctorate researcher interested in mathematical modelling for biomedicine.
+    Hi, I'm
+    <h1>Yuta Nagano.</h1>
+    I'm a medical student and postdoctorate researcher interested in mathematical modelling for biomedicine.
   I am currently working on machine learning methods to decode the underlying rules of the human T cell immune response.
-    </p>
   </div>
 </div>
 {{ end }}
