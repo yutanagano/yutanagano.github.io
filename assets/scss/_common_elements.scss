@@ -1,0 +1,35 @@
+header {
+  height: 1rem;
+  width: 100%;
+  margin-top: 2rem;
+  margin-bottom: 4rem;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  a {
+    color: black;
+    font-weight: bold;
+    font-family: Montserrat, sans-serif;
+    text-decoration: none;
+  }
+
+  nav {
+    display: flex;
+    gap: 2rem;
+  }
+}
+
+main {
+  width: 100%;
+}
+
+footer {
+  height: 3rem;
+  margin-top: 4rem;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

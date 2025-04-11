@@ -1,0 +1,15 @@
+#landing-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  #profile {
+    width: 300px;
+    border-radius: 150px;
+  }
+
+  #text-container {
+    width: 600px;
+    margin-left: 2rem;
+  }
+}
