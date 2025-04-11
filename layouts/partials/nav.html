@@ -1,10 +1,6 @@
-<div class="container">
-  <a href="/" id="logo">
-    <p>Yuta Nagano</p>
-  </a>
-  <nav>
-    <a href="/">CV</a>
-    <a href="/">Publications</a>
-    <a href="/">Software</a>
-  </nav>
-</div>
+<a href="/" id="logo">Yuta Nagano</a>
+<nav>
+  {{ range site.Menus.main }}
+  <a href="{{ .URL }}">{{ .Name }}</a>
+  {{ end }}
+</nav>
