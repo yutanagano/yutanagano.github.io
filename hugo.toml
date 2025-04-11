@@ -1,3 +1,14 @@
 baseurl = "http://www.yutanagano.com"
 languageCode = 'en-us'
 title = "Yuta Nagano"
+
+[menu]
+  [[menu.main]]
+    name = "CV"
+    pageRef = "/cv"
+  [[menu.main]]
+    name = "Publications"
+    pageRef = "/publications"
+  [[menu.main]]
+    name = "Software"
+    pageRef = "/software"
