@@ -6,4 +6,5 @@
 }}
 {{ $style := resources.Get "scss/main.scss" | toCSS $sassOpts | minify | fingerprint }}
 <link rel="stylesheet" href="{{ $style.Permalink }}">
+<script src="https://kit.fontawesome.com/87353f4e18.js" crossorigin="anonymous"></script>
 <title>Yuta Nagano: Home</title>
