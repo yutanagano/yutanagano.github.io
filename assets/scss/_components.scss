@@ -1,8 +1,9 @@
 header {
+  /* border: 1px solid black; */
+
   height: 1rem;
-  width: 100%;
-  margin-top: 2rem;
-  margin-bottom: 4rem;
+  width: calc(100% - 4rem);
+  margin: 2rem;
 
   display: flex;
   justify-content: space-between;
@@ -11,7 +12,7 @@ header {
   a {
     color: black;
     font-weight: bold;
-    font-family: Montserrat, sans-serif;
+    font-family: Inter, sans-serif;
     text-decoration: none;
   }
 
@@ -22,12 +23,14 @@ header {
 }
 
 main {
-  width: 100%;
+  width: calc(100% - 4rem);
+  margin: 2rem;
 }
 
 footer {
   height: 3rem;
-  margin-top: 4rem;
+  width: calc(100% - 4rem);
+  margin: 2rem;
 
   display: flex;
   justify-content: center;

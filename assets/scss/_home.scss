@@ -3,13 +3,23 @@
   justify-content: center;
   align-items: center;
 
+  /* margin-top: 4rem; */
+
   #profile {
-    width: 300px;
+    width: 290px;
+    border: 5px solid grey;
     border-radius: 150px;
   }
 
   #text-container {
     width: 600px;
     margin-left: 2rem;
+
+    #name {
+      line-height: 1;
+      margin-bottom: 2rem;
+      font-size: 4rem;
+      font-weight: bold;
+    }
   }
 }
