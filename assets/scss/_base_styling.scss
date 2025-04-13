@@ -1,31 +1,3 @@
-/*
-* Barebones V3
-* Copyright 2019 Steve Cochran
-*
-* Based of Skeleton by Dave Gamache
-*
-* Free to use under the MIT license.
-*/
-
-@use "variables";
-@use "spacing";
-@use "typography";
-@use "links";
-@use "buttons";
-@use "forms";
-@use "lists";
-@use "code";
-@use "table";
-/* @use "grid"; */
-/* @use "utilities"; */
-/* @use "clearing"; */
-/* @use "media_queries"; */
-
-/* Misc
-–––––––––––––––––––––––––––––––––––––––––––––––––– */
-hr {
-  margin-top: 3rem;
-  margin-bottom: 3.5rem;
-  border-width: 0;
-  border-top: 1px solid var(--border-color-softer);
+html {
+  scroll-behavior: smooth;
 }

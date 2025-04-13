@@ -1,4 +1,24 @@
 @use "reset";
+
+/*
+* Below partials up to "misc" is based on barebones V3 by Steve Cochran
+* Free to use under the MIT license.
+*/
+@use "variables";
 @use "base_styling";
+@use "spacing";
+@use "typography";
+@use "links";
+@use "buttons";
+@use "forms";
+@use "lists";
+@use "code";
+@use "table";
+/* @use "grid"; */
+/* @use "utilities"; */
+/* @use "clearing"; */
+/* @use "media_queries"; */
+/* @use "misc"; */
+
 @use "common_elements";
 @use "home";
