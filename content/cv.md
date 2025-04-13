@@ -7,7 +7,7 @@ draft = false
 ## Education
 
 | Year      | Programme                                            | Institution                     |
-| ---       | ---                                                  | ---                             |
+| --------- | ---------------------------------------------------- | ------------------------------- |
 | 2017-2026 | **MBBS**                                             | University College London       |
 | 2021-2024 | **PhD**, Computational Immunology & Machine Learning | University College London       |
 | 2019-2020 | **BSc** Immunology, Infection and Cell Pathology     | University College London       |
@@ -22,6 +22,7 @@ draft = false
 - **Heller bursary** scholarship for studying the French Language
 
 ### PhD
+
 - **IJEP Woolf Prize** for PhD research presentation (2024)
 
 ### MBBS
@@ -29,7 +30,7 @@ draft = false
 - **Distinction in medical sciences** (2019)
 - **Certificate of Merit in Academic Performance + Dissection** (2019)
 - **Letter of Commendation for Excellent Presentation** (2019)
-- **Certificate of Merit in Acaemic Performance** (2018)
+- **Certificate of Merit in Academic Performance** (2018)
 
 ### BSc Immunology, Infection and Cell Pathology
 
@@ -49,12 +50,12 @@ draft = false
 - **University of Virginia Jefferson Book Award** (2017)
 - **Gold** in the British Biology Olympiad (2017)
 - UK Senior Mathematics Challenge
-    * **Perfect score** (2016)
-    * **Best in Year** (2016)
-    * **Best in School** (2016)
-    * **Gold** (2015, 2016)
+  - **Perfect score** (2016)
+  - **Best in Year** (2016)
+  - **Best in School** (2016)
+  - **Gold** (2015, 2016)
 - **High-Scoring Student Award** from the American Scholastic Mathematics Association (2017)
-- **Top-10** at ISMTF Senior Mahtematical Competition (2016)
+- **Top-10** at ISMTF Senior Mathematical Competition (2016)
 
 ## Research Experience
 
@@ -63,7 +64,7 @@ Below is a list of my earliest and non-published work.
 
 ### Computational
 
-#### Defining an N-Dimensional Representation of the Human TCR Landscape (2019-2020)
+#### TCR Variational Autoencoder (2019-2020)
 
 This project at the UCL Cancer Institute was done as part of my BSc in Immunology, Infection and Cell Pathology.
 Here I developed a variational autoencoder for human T cell receptor (TCR) amino acid sequences and showed that mapping healthy and diseased (lung caner) patient TCR repertoires into the model's representation space showed detectable differences in TCR distribution.
@@ -90,26 +91,26 @@ As part of my higher-level International Baccalaureate biology class, I investig
 
 Gained basic cell-based wet lab training and experience at the UCL Cancer Institute.
 
-#### Working with *Drosophila* (2018-2019)
+#### Working with _Drosophila_ (2018-2019)
 
-Gained basic *Drosophila* wet lab training and experience at the UCL Institute of Aging.
+Gained basic _Drosophila_ wet lab training and experience at the UCL Institute of Aging.
 
-#### Primitive Intelligence in *Physarum polycephalum* (2017)
+#### Primitive Intelligence in _Physarum polycephalum_ (2017)
 
-For my extended essay for the International Baccalaureate programme, I conducted my own experiments cross-examining a theory on the underlying physical mechanisms of intelligent behaviour in *P. polycephalum*, an amoeboid organism.
+For my extended essay for the International Baccalaureate programme, I conducted my own experiments cross-examining a theory on the underlying physical mechanisms of intelligent behaviour in _P. polycephalum_, an amoeboid organism.
 
 ## Extracurricular
 
 ### Leadership Roles
 
-- **Group lead** of *Chordiac Arrest*, a vocal performance group (2019-2021)
+- **Group lead** of _Chordiac Arrest_, a vocal performance group (2019-2021)
 - **Treasurer** at University of London St. John Ambulance unit and society (2018-2020)
 - **Publicity head** for UCL Friends of Medecins Sans Frontieres society (2018-2019)
 
 ### Volunteering
 
 - **Event First Aider** with St. John's Ambulance (2019-2020)
-- **Japanese langauge teacher** with UCL Japan society (2017-2018)
+- **Japanese language teacher** with UCL Japan society (2017-2018)
 - **Carer** for patients with locked-in syndrome at the Royal Hospital for Neuro-disability (2016-2017)
 
 ### Competitions/Awards
