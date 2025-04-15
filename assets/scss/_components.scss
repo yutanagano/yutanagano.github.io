@@ -1,0 +1,38 @@
+header {
+  /* border: 1px solid black; */
+
+  height: 1rem;
+  width: calc(100% - 4rem);
+  margin: 2rem;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  a {
+    color: black;
+    font-weight: bold;
+    font-family: Inter, sans-serif;
+    text-decoration: none;
+  }
+
+  nav {
+    display: flex;
+    gap: 1rem;
+  }
+}
+
+main {
+  width: calc(100% - 4rem);
+  margin: 2rem;
+}
+
+footer {
+  height: 3rem;
+  width: calc(100% - 4rem);
+  margin: 2rem;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
