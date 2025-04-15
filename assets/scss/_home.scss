@@ -19,6 +19,10 @@
 
     #links a {
       color: var(--text-color);
+
+      :hover {
+        color: var(--accent-color-hover);
+      }
     }
   }
 }
