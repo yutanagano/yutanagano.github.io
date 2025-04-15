@@ -2,6 +2,10 @@ baseurl = "http://www.yutanagano.com"
 languageCode = 'en-us'
 title = "Yuta Nagano"
 
+[caches]
+  [caches.images]
+    dir = ':cacheDir/images'
+
 [menu]
   [[menu.main]]
     name = "CV"
