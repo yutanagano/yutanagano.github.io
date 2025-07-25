@@ -1,4 +1,6 @@
-<a href="/" id="logo">Yuta Nagano</a>
+<a href="/" id="logo">
+  {{ partial "logo.svg" }}
+</a>
 <nav>
   {{ range site.Menus.main }}
   <a href="{{ .URL }}">{{ .Name }}</a>
