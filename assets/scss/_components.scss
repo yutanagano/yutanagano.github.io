@@ -16,6 +16,13 @@ header {
     text-decoration: none;
   }
 
+  #logo svg {
+    display: block;
+    stroke: currentColor;
+    width: 2rem;
+    height: 2rem;
+  }
+
   nav {
     display: flex;
     gap: 1rem;
