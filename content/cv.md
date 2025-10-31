@@ -13,40 +13,147 @@ draft = false
 | 2019-2020 | **BSc** Immunology, Infection and Cell Pathology     | University College London       |
 | 2015-2017 | **International Baccalaureate**                      | ACS International School Cobham |
 
-## Academic achievements
-
-### Scholarship programmes
+## Scholarship programmes
 
 - Awarded [**Cancer Research UK**](https://donate.cancerresearchuk.org) [**City of London**](https://www.colcc.ac.uk/) **MBPhD studentship** to fund PhD programme
 - Awarded [**UCL Overseas Research Scholarship**](https://www.ucl.ac.uk/scholarships/research-excellence-scholarship) to fund PhD programme
 - Alumni of the [**Masason Foundation**](https://masason-foundation.org/en/) scholarship programme
 - **Heller bursary** scholarship for studying the French Language
 
-### PhD
+## Academic awards
 
-- **IJEP Woolf Prize** for PhD research presentation (2024)
+<table>
+  <tr>
+    <th>Category</th>
+    <th>Awards</th>
+  </tr>
+  <tr>
+    <td>PhD</td>
+    <td>
+      <ul>
+        <li><b>IJEP Woolf Prize</b> for PhD research presentation (2024)</li>
+      </ul>
+    </td>
+  </tr>
+  <tr>
+    <td>MBBS</td>
+    <td>
+      <ul>
+        <li><b>Distinction in medical sciences</b> for high academic performance (2018, 2019)</li>
+        <li><b>Certificate of Merit in Academic Performance</b> (2018, 2019)</li>
+        <li><b>Letter of Commendation</b> for outstanding coursework (2019)</li>
+      </ul>
+    </td>
+  </tr>
+  <tr>
+    <td>BSc</td>
+    <td>
+      <ul>
+        <li><b>Best overall results</b> within cohort (2020)</li>
+        <li><b>First Class Honours</b> (2020)</li>
+        <li>Member of <b>UCL Dean's List</b> (2020)</li>
+      </ul>
+    </td>
+  </tr>
+  <tr>
+    <td>International Baccalaureate</td>
+    <td>
+      <ul>
+        <li>Graduated as <b>salutatorian</b> (2017)</li>
+        <li><b>43/45 points</b> overall (2017)</li>
+        <li><b>Full marks</b> (7/7) for all subjects at higher level (2017)</li>
+        <li><b>Bilingual diploma</b> awarded for studying literature in two languages at native level (2017)</li>
+      </ul>
+    </td>
+  </tr>
+</table>
 
-### MBBS
+For older awards, please see [below](#early-academic-awards).
 
-- **Distinction in medical sciences** (2019)
-- **Certificate of Merit in Academic Performance + Dissection** (2019)
-- **Letter of Commendation for Excellent Presentation** (2019)
-- **Certificate of Merit in Academic Performance** (2018)
+---
 
-### BSc Immunology, Infection and Cell Pathology
+## Miscellaneous
 
-- **First Class Honours** (2020)
-- **Best overall results** within cohort (2020)
-- Member of **UCL Dean's List** (2020)
+### Hackathons
 
-### International Baccalaureate
+- **1st place** at the Biohack London (2023)
+- **Runner-up** at Cancer Research UK London Datathon (2025)
+- **Runner-up** at the UCL Dementia Hack (2020)
 
-- Graduated as **salutatorian** (2017)
-- **43/45 points** overall (2017)
-- **Full marks** (7/7) for all subjects at higher level (2017)
-- **Bilingual diploma** awarded for studying literature in two languages at native level (2017)
+### Early research experience
 
-### Other
+For a list of my publications, please see the [publications page]({{< ref
+"publications" >}}). Below is a list of my earliest and unpublished work.
+
+<table>
+  <tr>
+    <th>Category</th>
+    <th>Name</th>
+    <th>Description</th>
+    <th>Time</th>
+  </tr>
+  <tr>
+    <td rowspan="5">Computational</td>
+    <td>TCR Variational Autoencoder</td>
+    <td>
+      This project at the UCL Cancer Institute was done as part of my BSc in Immunology, Infection and Cell Pathology.
+      Here I developed a variational autoencoder for human T cell receptor (TCR) amino acid sequences and showed that mapping healthy and diseased (lung caner) patient TCR repertoires into the model's representation space showed detectable differences in TCR distribution.
+    </td>
+    <td>2020</td>
+  </tr>
+  <tr>
+    <td style="padding-left: 15px;">Automating Cell Image Analysis Through Deep Learning</td>
+    <td>
+      In this summer internship project at the UCL Cancer Institute, I developed a convolutional neural network-based computer vision program that can take in various types of scientific image data and accurately output the numbers and locations of objects of interest (such as cells or worms) seen in the image.
+    </td>
+    <td>2019</td>
+  </tr>
+  <tr>
+    <td style="padding-left: 15px;">Modelling Air Pollution and Climate Change</td>
+    <td>
+      For a sixth-form science competition, I developed a real-time simulation modelling the effects of air pollution and deforestation on the Earth's surface temperature.
+    </td>
+    <td>2017</td>
+  </tr>
+  <tr>
+    <td style="padding-left: 15px;">Determining Optimum Investments in Monopoly</td>
+    <td>
+      For my higher-level International Baccalaureate mathematics class, I used a Markov chain model to determine best investment strategies in the game of Monopoly.
+    </td>
+    <td>2017</td>
+  </tr>
+  <tr>
+    <td style="padding-left: 15px;">Modelling the Spread of Infectious Disease</td>
+    <td>
+      As part of my higher-level International Baccalaureate biology class, I investigated and critiqued the SEIR compartmental model of infection.
+    </td>
+    <td>2016</td>
+  </tr>
+  <tr>
+    <td rowspan="3">Wet lab</td>
+    <td>Summer Internship at the UCL Cancer Institute</td>
+    <td>
+      Gained basic cell-based wet lab training and experience at the UCL Cancer Institute.
+    </td>
+    <td>2019</td>
+  </tr>
+  <tr>
+    <td style="padding-left: 15px;">Working with <i>Drosophila</i></td>
+    <td>
+      Gained basic <i>Drosophila</i> wet lab training and experience at the UCL Institute of Aging.
+    </td>
+    <td>2018</td>
+  </tr>
+  <tr>
+    <td style="padding-left: 15px;">Primitive Intelligence in <i>Physarum polycephalum</i></td>
+    <td>
+      For my extended essay for the International Baccalaureate programme, I conducted my own experiments cross-examining a theory on the underlying physical mechanisms of intelligent behaviour in <i>P. polycephalum</i>, an amoeboid organism.
+    </td>
+    <td>2017</td>
+  </tr>
+</table>
+
+### Early academic awards
 
 - **University of Virginia Jefferson Book Award** (2017)
 - **Gold** in the British Biology Olympiad (2017)
@@ -57,65 +164,3 @@ draft = false
   - **Gold** (2015, 2016)
 - **High-Scoring Student Award** from the American Scholastic Mathematics Association (2017)
 - **Top-10** at ISMTF Senior Mathematical Competition (2016)
-
-## Research Experience
-
-For a list of my publications, please see the [publications page]({{< ref "publications" >}}).
-Below is a list of my earliest and non-published work.
-
-### Computational
-
-#### TCR Variational Autoencoder (2019-2020)
-
-This project at the UCL Cancer Institute was done as part of my BSc in Immunology, Infection and Cell Pathology.
-Here I developed a variational autoencoder for human T cell receptor (TCR) amino acid sequences and showed that mapping healthy and diseased (lung caner) patient TCR repertoires into the model's representation space showed detectable differences in TCR distribution.
-
-#### Automating Cell Image Analysis Through Deep Learning (2019-2020)
-
-In this summer internship project at the UCL Cancer Institute, I developed a convolutional neural network-based computer vision program that can take in various types of scientific image data and accurately output the numbers and locations of objects of interest (such as cells or worms) seen in the image.
-
-#### Modelling Air Pollution and Climate Change (2017)
-
-For a sixth-form science competition, I developed a real-time simulation modelling the effects of air pollution and deforestation on the Earth's surface temperature.
-
-#### Determining Optimum Investments in Monopoly (2017)
-
-For my higher-level International Baccalaureate mathematics class, I used a Markov chain model to determine best investment strategies in the game of Monopoly.
-
-#### Modelling the Spread of Infectious Disease (2016)
-
-As part of my higher-level International Baccalaureate biology class, I investigated and critiqued the SEIR compartmental model of infection.
-
-### Wet Lab
-
-#### Summer Internship at the UCL Cancer Institute (2019)
-
-Gained basic cell-based wet lab training and experience at the UCL Cancer Institute.
-
-#### Working with _Drosophila_ (2018-2019)
-
-Gained basic _Drosophila_ wet lab training and experience at the UCL Institute of Aging.
-
-#### Primitive Intelligence in _Physarum polycephalum_ (2017)
-
-For my extended essay for the International Baccalaureate programme, I conducted my own experiments cross-examining a theory on the underlying physical mechanisms of intelligent behaviour in _P. polycephalum_, an amoeboid organism.
-
-## Extracurricular
-
-### Leadership Roles
-
-- **Group lead** of _Chordiac Arrest_, a vocal performance group (2019-2021)
-- **Treasurer** at University of London St. John Ambulance unit and society (2018-2020)
-- **Publicity head** for UCL Friends of Medecins Sans Frontieres society (2018-2019)
-
-### Volunteering
-
-- **Event First Aider** with St. John's Ambulance (2019-2020)
-- **Japanese language teacher** with UCL Japan society (2017-2018)
-- **Carer** for patients with locked-in syndrome at the Royal Hospital for Neuro-disability (2016-2017)
-
-### Competitions/Awards
-
-- **1st place** at the Biohack London (2023)
-- **2nd place** at the UCL Dementia Hack (2020)
-- **Eagle scout** (top rank) in the Boy Scouts of America (2017)

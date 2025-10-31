@@ -19,3 +19,9 @@ ol ul {
 li {
   margin-bottom: 0.5rem;
 }
+table {
+  ul,
+  ol {
+    margin-bottom: 0;
+  }
+}

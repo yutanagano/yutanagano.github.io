@@ -3,16 +3,19 @@ languageCode = 'en-us'
 title = "Yuta Nagano"
 
 [caches]
-  [caches.images]
-    dir = ':cacheDir/images'
+[caches.images]
+dir = ':cacheDir/images'
 
 [menu]
-  [[menu.main]]
-    name = "CV"
-    pageRef = "/cv"
-  [[menu.main]]
-    name = "Publications"
-    pageRef = "/publications"
-  [[menu.main]]
-    name = "Software"
-    pageRef = "/software"
+[[menu.main]]
+name = "CV"
+pageRef = "/cv"
+[[menu.main]]
+name = "Publications"
+pageRef = "/publications"
+[[menu.main]]
+name = "Software"
+pageRef = "/software"
+
+[markup.goldmark.renderer]
+unsafe = true
