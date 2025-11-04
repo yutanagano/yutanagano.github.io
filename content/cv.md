@@ -4,14 +4,15 @@ date = 2023-12-01T23:27:09Z
 draft = false
 +++
 
+For an overview of my output, please see my [**recent publications**]({{< ref "publications" >}}) (or my [google scholar page](https://scholar.google.com/citations?user=d-MH8akAAAAJ&hl=en)) as well as some [**open source projects**]({{< ref "software" >}}) that I have authored / contributed to.
+
 ## Education
 
-| Year      | Programme                                            | Institution                     |
-| --------- | ---------------------------------------------------- | ------------------------------- |
-| 2017-2026 | **MBBS**, Medicine                                   | University College London       |
-| 2021-2024 | **PhD**, Computational Immunology & Machine Learning | University College London       |
-| 2019-2020 | **BSc** Immunology, Infection and Cell Pathology     | University College London       |
-| 2015-2017 | **International Baccalaureate**                      | ACS International School Cobham |
+| Year      | Programme                                            | Institution               |
+| --------- | ---------------------------------------------------- | ------------------------- |
+| 2017-2026 | **MBBS**, Medicine                                   | University College London |
+| 2021-2024 | **PhD**, Computational Immunology & Machine Learning | University College London |
+| 2019-2020 | **BSc** Immunology, Infection and Cell Pathology     | University College London |
 
 ## Scholarship programmes
 
@@ -55,20 +56,9 @@ draft = false
       </ul>
     </td>
   </tr>
-  <tr>
-    <td>International Baccalaureate</td>
-    <td>
-      <ul>
-        <li>Graduated as <b>salutatorian</b> (2017)</li>
-        <li><b>43/45 points</b> overall (2017)</li>
-        <li><b>Full marks</b> (7/7) for all subjects at higher level (2017)</li>
-        <li><b>Bilingual diploma</b> awarded for studying literature in two languages at native level (2017)</li>
-      </ul>
-    </td>
-  </tr>
 </table>
 
-For older awards, please see [below](#early-academic-awards).
+For earlier awards, please see [below](#early-academic-awards).
 
 ---
 
@@ -155,6 +145,11 @@ For a list of my publications, please see the [publications page]({{< ref
 
 ### Early academic awards
 
+- International baccalaureate:
+  - Graduated as **salutatorian** (2017)
+  - **43/45 points** overall (2017)
+  - **Full marks** (7/7) for all subjects at higher level (2017)
+  - **Bilingual diploma** awarded for studying literature in two languages at native level (2017)
 - **University of Virginia Jefferson Book Award** (2017)
 - **Gold** in the British Biology Olympiad (2017)
 - UK Senior Mathematics Challenge
@@ -164,3 +159,14 @@ For a list of my publications, please see the [publications page]({{< ref
   - **Gold** (2015, 2016)
 - **High-Scoring Student Award** from the American Scholastic Mathematics Association (2017)
 - **Top-10** at ISMTF Senior Mathematical Competition (2016)
+
+### Languages
+
+| Language  | Proficiency  |
+| --------- | ------------ |
+| Japanese  | Native       |
+| English   | Native       |
+| Norwegian | Intermediate |
+| Spanish   | Intermediate |
+| French    | Beginner     |
+| Dutch     | Beginner     |
