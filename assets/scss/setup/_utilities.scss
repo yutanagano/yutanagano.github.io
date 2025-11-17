@@ -6,6 +6,10 @@
   max-width: 100%;
   box-sizing: border-box;
 }
+.u-x-overflow-box {
+  width: 100%;
+  overflow-x: auto;
+}
 .u-pull-right {
   float: right;
 }

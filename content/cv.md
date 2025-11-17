@@ -8,11 +8,15 @@ For an overview of my output, please see my [**recent publications**]({{< ref "p
 
 ## Education
 
+<div class="u-x-overflow-box">
+
 | Year      | Programme                                            | Institution               |
 | --------- | ---------------------------------------------------- | ------------------------- |
 | 2017-2026 | **MBBS**, Medicine                                   | University College London |
 | 2021-2024 | **PhD**, Computational Immunology & Machine Learning | University College London |
 | 2019-2020 | **BSc** Immunology, Infection and Cell Pathology     | University College London |
+
+</div>
 
 ## Scholarship programmes
 
@@ -23,40 +27,42 @@ For an overview of my output, please see my [**recent publications**]({{< ref "p
 
 ## Academic awards
 
-<table>
-  <tr>
-    <th>Category</th>
-    <th>Awards</th>
-  </tr>
-  <tr>
-    <td>PhD</td>
-    <td>
-      <ul>
-        <li><b>IJEP Woolf Prize</b> for PhD research presentation (2024)</li>
-      </ul>
-    </td>
-  </tr>
-  <tr>
-    <td>MBBS</td>
-    <td>
-      <ul>
-        <li><b>Distinction in medical sciences</b> for high academic performance (2018, 2019)</li>
-        <li><b>Certificate of Merit in Academic Performance</b> (2018, 2019)</li>
-        <li><b>Letter of Commendation</b> for outstanding coursework (2019)</li>
-      </ul>
-    </td>
-  </tr>
-  <tr>
-    <td>BSc</td>
-    <td>
-      <ul>
-        <li><b>Best overall results</b> within cohort (2020)</li>
-        <li><b>First Class Honours</b> (2020)</li>
-        <li>Member of <b>UCL Dean's List</b> (2020)</li>
-      </ul>
-    </td>
-  </tr>
-</table>
+<div class="u-x-overflow-box">
+  <table>
+    <tr>
+      <th>Category</th>
+      <th>Awards</th>
+    </tr>
+    <tr>
+      <td>PhD</td>
+      <td>
+        <ul>
+          <li><b>IJEP Woolf Prize</b> for PhD research presentation (2024)</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td>MBBS</td>
+      <td>
+        <ul>
+          <li><b>Distinction in medical sciences</b> for high academic performance (2018, 2019)</li>
+          <li><b>Certificate of Merit in Academic Performance</b> (2018, 2019)</li>
+          <li><b>Letter of Commendation</b> for outstanding coursework (2019)</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td>BSc</td>
+      <td>
+        <ul>
+          <li><b>Best overall results</b> within cohort (2020)</li>
+          <li><b>First Class Honours</b> (2020)</li>
+          <li>Member of <b>UCL Dean's List</b> (2020)</li>
+        </ul>
+      </td>
+    </tr>
+  </table>
+</div>
 
 For earlier awards, please see [below](#early-academic-awards).
 
@@ -75,73 +81,75 @@ For earlier awards, please see [below](#early-academic-awards).
 For a list of my publications, please see the [publications page]({{< ref
 "publications" >}}). Below is a list of my earliest and unpublished work.
 
-<table>
-  <tr>
-    <th>Category</th>
-    <th>Name</th>
-    <th>Description</th>
-    <th>Time</th>
-  </tr>
-  <tr>
-    <td rowspan="5">Computational</td>
-    <td>TCR Variational Autoencoder</td>
-    <td>
-      This project at the UCL Cancer Institute was done as part of my BSc in Immunology, Infection and Cell Pathology.
-      Here I developed a variational autoencoder for human T cell receptor (TCR) amino acid sequences and showed that mapping healthy and diseased (lung caner) patient TCR repertoires into the model's representation space showed detectable differences in TCR distribution.
-    </td>
-    <td>2020</td>
-  </tr>
-  <tr>
-    <td style="padding-left: 15px;">Automating Cell Image Analysis Through Deep Learning</td>
-    <td>
-      In this summer internship project at the UCL Cancer Institute, I developed a convolutional neural network-based computer vision program that can take in various types of scientific image data and accurately output the numbers and locations of objects of interest (such as cells or worms) seen in the image.
-    </td>
-    <td>2019</td>
-  </tr>
-  <tr>
-    <td style="padding-left: 15px;">Modelling Air Pollution and Climate Change</td>
-    <td>
-      For a sixth-form science competition, I developed a real-time simulation modelling the effects of air pollution and deforestation on the Earth's surface temperature.
-    </td>
-    <td>2017</td>
-  </tr>
-  <tr>
-    <td style="padding-left: 15px;">Determining Optimum Investments in Monopoly</td>
-    <td>
-      For my higher-level International Baccalaureate mathematics class, I used a Markov chain model to determine best investment strategies in the game of Monopoly.
-    </td>
-    <td>2017</td>
-  </tr>
-  <tr>
-    <td style="padding-left: 15px;">Modelling the Spread of Infectious Disease</td>
-    <td>
-      As part of my higher-level International Baccalaureate biology class, I investigated and critiqued the SEIR compartmental model of infection.
-    </td>
-    <td>2016</td>
-  </tr>
-  <tr>
-    <td rowspan="3">Wet lab</td>
-    <td>Summer Internship at the UCL Cancer Institute</td>
-    <td>
-      Gained basic cell-based wet lab training and experience at the UCL Cancer Institute.
-    </td>
-    <td>2019</td>
-  </tr>
-  <tr>
-    <td style="padding-left: 15px;">Working with <i>Drosophila</i></td>
-    <td>
-      Gained basic <i>Drosophila</i> wet lab training and experience at the UCL Institute of Aging.
-    </td>
-    <td>2018</td>
-  </tr>
-  <tr>
-    <td style="padding-left: 15px;">Primitive Intelligence in <i>Physarum polycephalum</i></td>
-    <td>
-      For my extended essay for the International Baccalaureate programme, I conducted my own experiments cross-examining a theory on the underlying physical mechanisms of intelligent behaviour in <i>P. polycephalum</i>, an amoeboid organism.
-    </td>
-    <td>2017</td>
-  </tr>
-</table>
+<div class="u-x-overflow-box">
+  <table>
+    <tr>
+      <th>Category</th>
+      <th>Name</th>
+      <th>Description</th>
+      <th>Time</th>
+    </tr>
+    <tr>
+      <td rowspan="5">Computational</td>
+      <td>TCR Variational Autoencoder</td>
+      <td>
+        This project at the UCL Cancer Institute was done as part of my BSc in Immunology, Infection and Cell Pathology.
+        Here I developed a variational autoencoder for human T cell receptor (TCR) amino acid sequences and showed that mapping healthy and diseased (lung caner) patient TCR repertoires into the model's representation space showed detectable differences in TCR distribution.
+      </td>
+      <td>2020</td>
+    </tr>
+    <tr>
+      <td style="padding-left: 15px;">Automating Cell Image Analysis Through Deep Learning</td>
+      <td>
+        In this summer internship project at the UCL Cancer Institute, I developed a convolutional neural network-based computer vision program that can take in various types of scientific image data and accurately output the numbers and locations of objects of interest (such as cells or worms) seen in the image.
+      </td>
+      <td>2019</td>
+    </tr>
+    <tr>
+      <td style="padding-left: 15px;">Modelling Air Pollution and Climate Change</td>
+      <td>
+        For a sixth-form science competition, I developed a real-time simulation modelling the effects of air pollution and deforestation on the Earth's surface temperature.
+      </td>
+      <td>2017</td>
+    </tr>
+    <tr>
+      <td style="padding-left: 15px;">Determining Optimum Investments in Monopoly</td>
+      <td>
+        For my higher-level International Baccalaureate mathematics class, I used a Markov chain model to determine best investment strategies in the game of Monopoly.
+      </td>
+      <td>2017</td>
+    </tr>
+    <tr>
+      <td style="padding-left: 15px;">Modelling the Spread of Infectious Disease</td>
+      <td>
+        As part of my higher-level International Baccalaureate biology class, I investigated and critiqued the SEIR compartmental model of infection.
+      </td>
+      <td>2016</td>
+    </tr>
+    <tr>
+      <td rowspan="3">Wet lab</td>
+      <td>Summer Internship at the UCL Cancer Institute</td>
+      <td>
+        Gained basic cell-based wet lab training and experience at the UCL Cancer Institute.
+      </td>
+      <td>2019</td>
+    </tr>
+    <tr>
+      <td style="padding-left: 15px;">Working with <i>Drosophila</i></td>
+      <td>
+        Gained basic <i>Drosophila</i> wet lab training and experience at the UCL Institute of Aging.
+      </td>
+      <td>2018</td>
+    </tr>
+    <tr>
+      <td style="padding-left: 15px;">Primitive Intelligence in <i>Physarum polycephalum</i></td>
+      <td>
+        For my extended essay for the International Baccalaureate programme, I conducted my own experiments cross-examining a theory on the underlying physical mechanisms of intelligent behaviour in <i>P. polycephalum</i>, an amoeboid organism.
+      </td>
+      <td>2017</td>
+    </tr>
+  </table>
+</div>
 
 ### Early academic awards
 
@@ -162,6 +170,8 @@ For a list of my publications, please see the [publications page]({{< ref
 
 ### Languages
 
+<div class="u-x-overflow-box">
+
 | Language  | Proficiency  |
 | --------- | ------------ |
 | Japanese  | Native       |
@@ -170,3 +180,5 @@ For a list of my publications, please see the [publications page]({{< ref
 | Spanish   | Intermediate |
 | French    | Beginner     |
 | Dutch     | Beginner     |
+
+</div>
