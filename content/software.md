@@ -13,8 +13,8 @@ downstream TCR specificity prediction and clustering.
 package that cleans and standardizes T cell receptor (TR), Major
 Histocompatibility (MH), and Immunoglobulin (IG) data to be IMGT-compliant.
 
-[**nearust** (author, maintainer)](https://github.com/yutanagano/nearust): A tool for fast detection
-of similar strings.
+[**symscan** (author, maintainer)](https://github.com/yutanagano/nearust): A tool for fast discovery
+of similar strings in bulk.
 
 [**smark.nvim** (author, maintainer)](https://github.com/yutanagano/smark.nvim): A smart,
 Prettier-compatible Markdown auto-bullet list plugin for NeoVim.
