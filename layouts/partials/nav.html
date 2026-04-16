@@ -2,8 +2,14 @@
 	{{ partial "logo.svg" }}
 </a>
 
+<button id="menu-toggle-btn">
+	&#9776;
+</button>
+
 <nav>
-	{{ range site.Menus.main }}
-	<a href="{{ .URL }}">{{ .Name }}</a>
-	{{ end }}
+	<ul class="nav-links">
+		{{ range site.Menus.main }}
+		<li><a href="{{ .URL }}">{{ .Name }}</a></li>
+		{{ end }}
+	</ul>
 </nav>
