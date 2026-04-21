@@ -41,14 +41,16 @@ header {
   }
 
   #desktop-nav ul {
-    height: 2rem;
-
     display: flex;
     flex-direction: row;
     list-style: none;
     margin: 0;
     padding: 0;
     gap: 1rem;
+
+    li {
+      margin: 0;
+    }
   }
 
   #mobile-nav {
@@ -65,7 +67,6 @@ header {
 
     li {
       margin: 0;
-      padding: 0;
     }
   }
 
