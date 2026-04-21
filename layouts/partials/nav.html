@@ -1,13 +1,27 @@
-<a href="/" id="logo">
-	{{ partial "logo.svg" }}
-</a>
+{{ $ts := resources.Get "ts/nav.ts" }}
+{{ $js := $ts | js.Build }}
+<script src="{{ $js.RelPermalink }}" defer></script>
 
-<button id="menu-toggle-btn">
-	&#9776;
-</button>
+<div id="main-header">
+	<a href="/" id="logo">
+		{{ partial "logo.svg" }}
+	</a>
 
-<nav>
-	<ul class="nav-links">
+	<button id="menu-toggle-btn">
+		&#9776;
+	</button>
+
+	<nav id="desktop-nav">
+		<ul>
+			{{ range site.Menus.main }}
+			<li><a href="{{ .URL }}">{{ .Name }}</a></li>
+			{{ end }}
+		</ul>
+	</nav>
+</div>
+
+<nav id="mobile-nav">
+	<ul>
 		{{ range site.Menus.main }}
 		<li><a href="{{ .URL }}">{{ .Name }}</a></li>
 		{{ end }}
