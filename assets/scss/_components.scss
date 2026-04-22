@@ -30,6 +30,8 @@ header {
 
   #menu-toggle-btn {
     display: none;
+
+    fill: black;
     height: 2rem;
     width: 2rem;
     margin: 0;
@@ -38,6 +40,18 @@ header {
     border: none;
     border-radius: 0;
     box-sizing: content-box;
+
+    #hamburger.hidden {
+      display: none;
+    }
+
+    #x-mark.hidden {
+      display: none;
+    }
+  }
+
+  #menu-toggle-btn:hover {
+    fill: var(--accent-color-hover);
   }
 
   #desktop-nav ul {
@@ -66,6 +80,7 @@ header {
     margin-top: 1rem;
 
     li {
+      text-align: right;
       margin: 0;
     }
   }
