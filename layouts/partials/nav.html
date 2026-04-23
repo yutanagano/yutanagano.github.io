@@ -5,7 +5,8 @@
   <a href="/" id="logo"> {{ partial "logo.svg" }} </a>
 
   <button id="menu-toggle-btn">
-    {{ partial "hamburger.svg" }} {{ partial "x-mark.svg" }}
+    <span id="hamburger">{{ partial "hamburger.svg" }}</span>
+    <span id="x-mark" hidden>{{ partial "x-mark.svg" }}</span>
   </button>
 
   <nav id="desktop-nav">

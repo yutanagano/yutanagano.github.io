@@ -12,8 +12,8 @@ document.addEventListener("DOMContentLoaded", () => {
   ) {
     toggleBtn.addEventListener("click", () => {
       mobileNav.classList.toggle("active");
-      hamburger.classList.toggle("hidden");
-      xMark.classList.toggle("hidden");
+      hamburger.hidden = !hamburger.hidden;
+      xMark.hidden = !xMark.hidden;
     });
   }
 });

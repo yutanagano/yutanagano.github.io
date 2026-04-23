@@ -43,11 +43,11 @@ header {
     border-radius: 0;
     box-sizing: content-box;
 
-    #hamburger.hidden {
+    #hamburger[hidden] {
       display: none;
     }
 
-    #x-mark.hidden {
+    #x-mark[hidden] {
       display: none;
     }
   }
