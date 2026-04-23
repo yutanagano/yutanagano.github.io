@@ -172,13 +172,13 @@ For a list of my publications, please see the [publications page]({{< ref
 
 <div class="u-x-overflow-box">
 
-| Language  | Proficiency  |
-| --------- | ------------ |
-| Japanese  | Native       |
-| English   | Native       |
-| Norwegian | Intermediate |
-| Spanish   | Intermediate |
-| French    | Beginner     |
-| Dutch     | Beginner     |
+| Language           | Proficiency  |
+| ------------------ | ------------ |
+| 日本語 (Japanese)  | Native       |
+| English            | Native       |
+| Norsk (Norwegian)  | Intermediate |
+| Español (Spanish)  | Intermediate |
+| Français (French)  | Beginner     |
+| Nederlands (Dutch) | Beginner     |
 
 </div>
