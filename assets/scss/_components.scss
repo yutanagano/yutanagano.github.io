@@ -1,7 +1,9 @@
+body {
+  padding: 2rem;
+}
+
 header {
   min-height: 2rem;
-  width: calc(100% - 4rem);
-  margin: 2rem;
 
   a {
     color: black;
@@ -101,14 +103,11 @@ header {
 }
 
 main {
-  width: calc(100% - 4rem);
-  margin: 2rem;
+  margin: 2rem 0;
 }
 
 footer {
   height: 3rem;
-  width: calc(100% - 4rem);
-  margin: 2rem;
 
   display: flex;
   justify-content: center;
