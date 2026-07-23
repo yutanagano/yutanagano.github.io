@@ -1,10 +1,12 @@
 {{ define "main" }}
 <h1>Blog<span class="highlight">.</span></h1>
-<ul>
-	{{ range .Pages }}
-	<li>
-		<a href="{{ .Permalink }}">{{ .Title }}</a>
-		-{{ .Date.Format "January 2, 2006" }}
+<ul class="blog-list">
+	{{ range .Pages.ByDate.Reverse }}
+	<li class="blog-entry">
+		<a href="{{ .Permalink }}" class="blog-entry-link">
+			<span class="blog-entry-title">{{ .Title }}</span>
+			<time class="blog-entry-date" datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "January 2, 2006" }}</time>
+		</a>
 	</li>
 	{{ end }}
 </ul>
