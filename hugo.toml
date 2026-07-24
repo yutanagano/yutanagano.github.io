@@ -1,5 +1,5 @@
 baseurl = "http://www.yutanagano.com"
-languageCode = 'en-us'
+locale = 'en-us'
 title = "Yuta Nagano"
 
 [caches]
