@@ -1,7 +1,9 @@
 {{ define "main" }}
 <article class="blog-post">
 	{{ with .Parent }}
-	{{ partial "blog-back-nav.html" (dict "parent" .) }}
+	<nav class="blog-post-nav" aria-label="Blog">
+		<p class="blog-back"><a href="{{ .Permalink }}">← Blog</a></p>
+	</nav>
 	{{ end }}
 	<header class="blog-post-header">
 		<h1>{{ partial "title-with-accent.html" .Title }}</h1>
@@ -11,7 +13,9 @@
 		{{ .Content }}
 	</div>
 	{{ with .Parent }}
-	{{ partial "blog-back-nav.html" (dict "parent" . "end" true) }}
+	<nav class="blog-post-nav blog-post-nav--end" aria-label="Blog">
+		<p class="blog-back"><a href="{{ .Permalink }}">← Blog</a></p>
+	</nav>
 	{{ end }}
 </article>
 {{ end }}
