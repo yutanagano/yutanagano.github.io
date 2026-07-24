@@ -73,26 +73,12 @@
 }
 
 .software-stage {
-  display: inline-block;
-  padding: 0.125rem 0.5rem;
-  border-radius: 999px;
-  font-size: 0.75rem;
-  line-height: 1.4;
+  @include entry.entry-tag;
   text-transform: capitalize;
-  background-color: var(--background-color-softer);
-  color: var(--text-color-softer);
 }
 
 .software-stage--production {
-  background-color: hsl(var(--accent-hue), 86%, 95%);
-  color: var(--accent-color);
-}
-
-@media (prefers-color-scheme: dark) {
-  .software-stage--production {
-    background-color: hsl(var(--accent-hue), 30%, 22%);
-    color: var(--accent-color);
-  }
+  @include entry.entry-tag-accent;
 }
 
 .software-language::before {

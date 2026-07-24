@@ -1,0 +1,73 @@
+@use "entry-list" as entry;
+
+.publication-list {
+  @include entry.entry-list;
+}
+
+.publication-card {
+  margin: 0;
+  min-width: 0;
+}
+
+.publication-card-link,
+.publication-card-surface {
+  @include entry.entry-card-shell;
+  display: block;
+  box-sizing: border-box;
+  padding: var(--entry-card-padding-block) var(--entry-card-padding-inline);
+}
+
+.publication-card-link {
+  @include entry.entry-interactive-surface;
+  color: var(--text-color-normal);
+  text-decoration: none;
+}
+
+.publication-card-header {
+  @include entry.entry-row-header;
+  margin-bottom: var(--entry-body-gap);
+}
+
+.publication-card-title {
+  margin: 0;
+  min-width: 0;
+  font-size: 1.3rem;
+  font-weight: bold;
+  line-height: 1.25;
+}
+
+.publication-card-year {
+  @include entry.entry-meta-text;
+  flex-shrink: 0;
+  white-space: nowrap;
+}
+
+.publication-card-topics {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-xs);
+  margin-bottom: var(--entry-body-gap);
+}
+
+.publication-topic {
+  @include entry.entry-tag;
+  @include entry.entry-tag-accent;
+}
+
+.publication-card-authors,
+.publication-card-venue {
+  @include entry.entry-meta-text;
+  margin: 0;
+}
+
+.publication-card-authors {
+  margin-bottom: var(--space-xs);
+}
+
+@media (max-width: 640px) {
+  .publication-card-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: var(--space-xs);
+  }
+}
