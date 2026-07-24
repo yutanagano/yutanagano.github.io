@@ -7,11 +7,28 @@
   gap: var(--space-md);
 }
 
-.blog-meta {
+.blog-post-header {
+  .blog-meta {
+    margin-top: 0;
+    margin-bottom: var(--space-lg);
+    font-size: 0.875rem;
+    color: var(--text-color-softer);
+  }
+}
+
+.blog-back {
   margin-top: 0;
-  margin-bottom: var(--space-lg);
+  margin-bottom: var(--space-md);
   font-size: 0.875rem;
   color: var(--text-color-softer);
+}
+
+.blog-post-nav--end {
+  margin-top: var(--space-lg);
+
+  .blog-back {
+    margin-bottom: 0;
+  }
 }
 
 .blog-entry {
