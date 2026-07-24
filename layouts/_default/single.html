@@ -1,4 +1,4 @@
 {{ define "main" }}
-<h1>{{ .Title }}<span class="highlight">.</span></h1>
+<h1>{{ partial "title-with-accent.html" .Title }}</h1>
 {{ .Content }}
 {{ end }}

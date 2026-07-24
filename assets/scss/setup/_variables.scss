@@ -1,113 +1,50 @@
-html {
-  /* default theme: light background, dark text, blue accent */
-  --theme-hue: 0; /* white */
-  --accent-hue: 250; /* blue */
+:root {
+  --theme-hue: 0;
+  --accent-hue: 250;
 
-  --text-color-richer: hsl(var(--theme-hue), 0%, 5%); /* #0d0d0d		*/
-  --text-color-normal: hsl(
-    var(--theme-hue),
-    0%,
-    13%
-  ); /* #222222 		text color; button:hover:focus color */
-  --text-color-softer: hsl(
-    var(--theme-hue),
-    0%,
-    33%
-  ); /* #555555 		button color; button:hover border */
+  --accent-color: hsl(var(--accent-hue), 86%, 57%);
+  --accent-color-hover: hsl(var(--accent-hue), 76%, 49%);
 
-  --accent-color: hsl(
-    var(--accent-hue),
-    86%,
-    57%
-  ); /* #33C3F0 		link; button-primary bg+border; textarea,select:focus border */
-  --accent-color-hover: hsl(
-    var(--accent-hue),
-    76%,
-    49%
-  ); /* #1EAEDB 		link hover; button-primary:hover:focus bg+border */
+  --text-color-richer: hsl(var(--theme-hue), 0%, 5%);
+  --text-color-normal: hsl(var(--theme-hue), 0%, 13%);
+  --text-color-softer: hsl(var(--theme-hue), 0%, 33%);
 
-  --border-color: hsl(var(--theme-hue), 0%, 73%); /* #bbbbbb		button border */
-  --border-color-softer: hsl(
-    var(--theme-hue),
-    0%,
-    82%
-  ); /* #d1d1d1		textarea,select,code,td,hr border	 */
+  --border-color: hsl(var(--theme-hue), 0%, 73%);
+  --border-color-softer: hsl(var(--theme-hue), 0%, 82%);
 
-  --background-color: white; /* transparent body background; textarea,select background */
+  --background-color: white;
   --background-color-softer: hsl(var(--theme-hue), 0%, 95%);
-  --code-background: hsl(
-    var(--theme-hue),
-    0%,
-    95%
-  ); /* #f1f1f1 		code background*/
+  --code-background: hsl(var(--theme-hue), 0%, 95%);
 
   --button-primary-color: white;
-
-  /* Grid Defaults - default to match orig skeleton settings */
   --grid-max-width: 960px;
+
+  --space-xs: 0.5rem;
+  --space-sm: 0.75rem;
+  --space-md: 1.25rem;
+  --space-lg: 2rem;
+  --space-xl: 2.5rem;
+  --space-2xl: 3rem;
 }
 
-/*  Dark Theme
-	Note: prefers-color-scheme selector support is still limited, but 
-	included for future and an example of defining a different base 'theme'
-*/
 @media (prefers-color-scheme: dark) {
-  :html {
-    /* dark theme: light background, dark text, blue accent */
-    --theme-hue: 0; /* black */
-    --accent-hue: 194; /* blue */
+  :root {
+    --text-color-richer: hsl(var(--theme-hue), 0%, 95%);
+    --text-color-normal: hsl(var(--theme-hue), 0%, 80%);
+    --text-color-softer: hsl(var(--theme-hue), 0%, 67%);
 
-    --text-color-richer: hsl(var(--theme-hue), 0%, 95%); /* 		*/
-    --text-color-normal: hsl(
-      var(--theme-hue),
-      0%,
-      80%
-    ); /* text color; button:hover:focus color */
-    --text-color-softer: hsl(
-      var(--theme-hue),
-      0%,
-      67%
-    ); /* button color; button:hover border */
+    --border-color: hsl(var(--theme-hue), 0%, 27%);
+    --border-color-softer: hsl(var(--theme-hue), 0%, 20%);
 
-    --accent-color: hsl(
-      var(--accent-hue),
-      76%,
-      49%
-    ); /* link; button-primary bg+border; textarea,select:focus border */
-    --accent-color-hover: hsl(
-      var(--accent-hue),
-      86%,
-      57%
-    ); /* link hover; button-primary:hover:focus bg+border */
-
-    --border-color: hsl(var(--theme-hue), 0%, 27%); /* button border */
-    --border-color-softer: hsl(
-      var(--theme-hue),
-      0%,
-      20%
-    ); /* textarea,select,code,td,hr border	 */
-
-    --background-color: hsl(
-      var(--theme-hue),
-      0%,
-      12%
-    ); /* body background; textarea,select background */
+    --background-color: hsl(var(--theme-hue), 0%, 12%);
     --background-color-softer: hsl(var(--theme-hue), 0%, 18%);
-    --code-background: hsl(var(--theme-hue), 0%, 5%); /* code background*/
+    --code-background: hsl(var(--theme-hue), 0%, 5%);
 
-    --button-primary-color: white;
+    --accent-color: hsl(var(--accent-hue), 76%, 68%);
+    --accent-color-hover: hsl(var(--accent-hue), 86%, 76%);
   }
 
   img.value-img {
     filter: invert(0.8);
   }
-  /* TODO - test dialing back image intensity on dark background
-  img {
-    opacity: .80;
-    transition: opacity .5s ease-in-out;
-  }
-  img:hover {
-    opacity: 1;
-  }
-  */
 }

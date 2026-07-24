@@ -1,20 +1,8 @@
 /*
-* Below partials are based on barebones V3 by Steve Cochran
-* Free to use under the MIT license.
-*/
+ * Base styles derived from barebones V3 by Steve Cochran (MIT license).
+ */
 @forward "reset";
 @forward "variables";
-@forward "base_styling";
-@forward "spacing";
-@forward "typography";
-@forward "links";
-@forward "buttons";
-@forward "forms";
-@forward "lists";
-@forward "code";
-@forward "table";
-@use "misc";
+@forward "base";
+@forward "elements";
 @use "utilities";
-/* @use "grid"; */
-/* @use "clearing"; */
-/* @use "media_queries"; */

@@ -1,0 +1,8 @@
+{{ $title := . }}
+{{ $match := findRE `[.!?…]+$` $title 1 }}
+{{ if $match }}
+  {{ $punct := index $match 0 }}
+  {{ strings.TrimSuffix $punct $title }}<span class="highlight">{{ $punct }}</span>
+{{ else }}
+  {{ $title }}<span class="highlight">.</span>
+{{ end }}

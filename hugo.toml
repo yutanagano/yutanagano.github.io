@@ -1,5 +1,5 @@
 baseurl = "http://www.yutanagano.com"
-languageCode = 'en-us'
+locale = 'en-us'
 title = "Yuta Nagano"
 
 [caches]
@@ -16,6 +16,17 @@ pageRef = "/publications"
 [[menu.main]]
 name = "Software"
 pageRef = "/software"
+[[menu.main]]
+name = "Blog"
+pageRef = "/blog"
 
 [markup.goldmark.renderer]
 unsafe = true
+[markup.goldmark.extensions.passthrough]
+enable = true
+[markup.goldmark.extensions.passthrough.delimiters]
+block = [['$$', '$$']]
+inline = [['$', '$']]
+
+[params]
+math = true
