@@ -2,7 +2,7 @@
 title = 'How do you design a hypothesis test?'
 date = 2026-07-24T14:10:27+01:00
 draft = false
-keywords = ["statistics", "hypothesis testing"]
+keywords = ["statistics"]
 +++
 
 Let's pretend that you are a researcher looking at the effects of a particular
