@@ -31,13 +31,17 @@
 
 .blog-entry-link {
   @include entry.entry-card-shell;
-  @include entry.entry-row-header;
   @include entry.entry-interactive-surface;
+  display: block;
   width: 100%;
   box-sizing: border-box;
   padding: var(--entry-card-padding-block) var(--entry-card-padding-inline);
   color: var(--text-color-normal);
   text-decoration: none;
+}
+
+.blog-entry-header {
+  @include entry.entry-card-header;
 }
 
 .blog-entry-title {
@@ -47,4 +51,12 @@
 
 .blog-entry-date {
   @include entry.entry-meta-aside;
+}
+
+.blog-entry-keywords {
+  @include entry.entry-keywords-row;
+}
+
+.blog-entry-keyword {
+  @include entry.entry-tag-pill-accent;
 }

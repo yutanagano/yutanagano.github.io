@@ -77,3 +77,29 @@
     gap: var(--space-xs);
   }
 }
+
+@mixin entry-card-header {
+  @include entry-row-header;
+  margin-bottom: var(--entry-body-gap);
+  @include entry-header-stack-mobile;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+@mixin entry-keywords-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-xs);
+  margin-bottom: var(--entry-body-gap);
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+@mixin entry-tag-pill-accent {
+  @include entry-tag;
+  @include entry-tag-accent;
+}

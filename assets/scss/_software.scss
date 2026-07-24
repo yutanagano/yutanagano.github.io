@@ -11,9 +11,7 @@
 }
 
 .software-card-header {
-  @include entry.entry-row-header;
-  margin-bottom: var(--entry-body-gap);
-  @include entry.entry-header-stack-mobile;
+  @include entry.entry-card-header;
 }
 
 .software-card-identity {
@@ -77,7 +75,7 @@
 }
 
 .software-stage--production {
-  @include entry.entry-tag-accent;
+  @include entry.entry-tag-pill-accent;
 }
 
 .software-language::before {

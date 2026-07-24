@@ -24,9 +24,7 @@
 }
 
 .publication-card-header {
-  @include entry.entry-row-header;
-  margin-bottom: var(--entry-body-gap);
-  @include entry.entry-header-stack-mobile;
+  @include entry.entry-card-header;
 }
 
 .publication-card-title {
@@ -38,16 +36,12 @@
   @include entry.entry-meta-aside;
 }
 
-.publication-card-topics {
-  display: flex;
-  flex-wrap: wrap;
-  gap: var(--space-xs);
-  margin-bottom: var(--entry-body-gap);
+.publication-card-keywords {
+  @include entry.entry-keywords-row;
 }
 
-.publication-topic {
-  @include entry.entry-tag;
-  @include entry.entry-tag-accent;
+.publication-keyword {
+  @include entry.entry-tag-pill-accent;
 }
 
 .publication-card-authors,

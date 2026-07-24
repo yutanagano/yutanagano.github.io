@@ -1,7 +1,7 @@
 publications:
   - title: "Contrastive learning of T cell receptor representations"
     url: "https://www.cell.com/cell-systems/fulltext/S2405-4712(24)00369-7"
-    topics: ["T cell receptor", "contrastive learning", "transformer"]
+    keywords: ["T cell receptor", "contrastive learning", "transformer"]
     authors: "Yuta Nagano, Andrew G.T. Pyo, Martina Milighetti, James Henderson, John Shawe-Taylor, Benny Chain, Andreas Tiffeau-Mayer"
     venue: "Cell Systems"
     year: 2024
@@ -9,7 +9,7 @@ publications:
 
   - title: "Data-driven Discovery of Biophysical T Cell Receptor Co-specificity Rules"
     url: "https://journals.aps.org/prxlife/abstract/10.1103/14j1-wrh5"
-    topics: ["T cell receptor", "biophysics"]
+    keywords: ["T cell receptor", "biophysics"]
     authors: "Andrew G.T. Pyo, Yuta Nagano, Martina Milighetti, James Henderson, Curtis G. Callan Jr., Benny Chain, Ned S. Wingreen, Andreas Tiffeau-Mayer"
     venue: "PRX Life"
     year: 2025
@@ -17,7 +17,7 @@ publications:
 
   - title: "Limits on Inferring T-cell Specificity from Partial Information"
     url: "https://www.pnas.org/doi/10.1073/pnas.2408696121"
-    topics: ["T cell receptor", "information theory"]
+    keywords: ["T cell receptor", "information theory"]
     authors: "James Henderson, Yuta Nagano, Martina Milighetti, Andreas Tiffeau-Mayer"
     venue: "PNAS"
     year: 2024
@@ -25,7 +25,7 @@ publications:
 
   - title: "Systematic analysis of CDR contacts and sequence constraints between T cell receptor αβ chains"
     url: "https://doi.org/10.1093/bioinformatics/btag551"
-    topics: ["T cell receptor", "structural biology", "information theory"]
+    keywords: ["T cell receptor", "structural biology", "information theory"]
     authors: "Martina Milighetti, Yuta Nagano, James Henderson, Uri Hershberg, Andreas Tiffeau-Mayer, Anne-Florence Bitbol, Benny Chain"
     venue: "Bioinformatics"
     year: 2024
@@ -33,7 +33,7 @@ publications:
 
   - title: "tidytcells: standardizer for TR/MH nomenclature"
     url: "https://doi.org/10.3389/fimmu.2023.1276106"
-    topics: ["immunoinformatics", "nomenclature", "software"]
+    keywords: ["immunoinformatics", "nomenclature", "software"]
     authors: "Yuta Nagano, Benjamin Chain"
     venue: "Frontiers in Immunology"
     year: 2023
@@ -41,7 +41,7 @@ publications:
 
   - title: "Overcoming data bottlenecks in T cell receptor specificity prediction with effective machine learning"
     url: "https://discovery.ucl.ac.uk/id/eprint/10200813/"
-    topics: ["T cell receptor", "machine learning", "thesis"]
+    keywords: ["T cell receptor", "machine learning", "thesis"]
     authors: "Yuta Nagano"
     venue: "UCL"
     year: 2024

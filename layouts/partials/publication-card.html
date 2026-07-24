@@ -12,10 +12,10 @@
     <h2 class="publication-card-title">{{ $pub.title }}</h2>
     <span class="publication-card-year">{{ $pub.year }}</span>
   </div>
-  {{ with $pub.topics }}
-  <div class="publication-card-topics">
+  {{ with $pub.keywords }}
+  <div class="publication-card-keywords">
     {{ range . }}
-    <span class="publication-topic">{{ . }}</span>
+    <span class="publication-keyword">{{ . }}</span>
     {{ end }}
   </div>
   {{ end }}

@@ -4,8 +4,17 @@
 	{{ range .Pages.ByDate.Reverse }}
 	<li class="blog-entry">
 		<a href="{{ .Permalink }}" class="blog-entry-link">
-			<span class="blog-entry-title">{{ .Title }}</span>
-			<time class="blog-entry-date" datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "January 2, 2006" }}</time>
+			<div class="blog-entry-header">
+				<span class="blog-entry-title">{{ .Title }}</span>
+				<time class="blog-entry-date" datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "January 2, 2006" }}</time>
+			</div>
+			{{ with .Keywords }}
+			<div class="blog-entry-keywords">
+				{{ range . }}
+				<span class="blog-entry-keyword">{{ . }}</span>
+				{{ end }}
+			</div>
+			{{ end }}
 		</a>
 	</li>
 	{{ end }}
