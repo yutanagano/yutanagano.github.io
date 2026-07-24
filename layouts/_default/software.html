@@ -21,9 +21,9 @@
 			{{ $linkType := index hugo.Data.linktypes .type }}
 			{{ $icon := index $linkType "icon" | default "fa-solid fa-arrow-up-right-from-square" }}
 			{{ $label := index $linkType "label" | default "link" }}
-			<a href="{{ .url }}" class="software-link-chip" target="_blank" rel="noopener noreferrer">
+			<a href="{{ .url }}" class="software-link-chip" aria-label="{{ $label }}" target="_blank" rel="noopener noreferrer">
 				<i class="{{ $icon }}" aria-hidden="true"></i>
-				<span>{{ $label }}</span>
+				<span class="software-link-chip-label">{{ $label }}</span>
 			</a>
 			{{ end }}
 		</div>
