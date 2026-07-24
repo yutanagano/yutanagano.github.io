@@ -1,0 +1,58 @@
+---
+description: Guardrails for code reduction and simplification requests
+globs:
+  - layouts/**/*.html
+  - assets/css/**/*.css
+  - assets/scss/**/*.scss
+alwaysApply: false
+---
+
+# Code Reduction & Simplification
+
+Apply when the user asks to simplify, reduce, streamline, or minimize code.
+
+## Priority 1: Line Count & DOM Depth
+
+Minimize total lines and HTML nesting. Every edit should reduce or hold steady on both. Flatten wrapper `<div>`s; remove redundant elements before adding CSS or JS workarounds.
+
+## Hard Constraints
+
+- **No new abstractions** — Do not add CSS mixins/variables, BEM utility classes, or custom JavaScript unless explicitly requested.
+- **No new partials** — Reuse existing Hugo partials. Do not create a new partial unless asked.
+- **Off limits** — Do not modify `content/**/*.md`, `hugo.toml`, or `config.yaml`.
+
+## HTML & CSS
+
+- Keep markup strictly semantic (`<article>`, `<nav>`, `<time>`, etc.). Prefer fewer elements over styling wrappers.
+- Prefer modern CSS over breakpoint sprawl: `clamp()`, `min()`, `max()`, `container queries`.
+- Delete unused rules and duplicate selectors instead of adding overrides.
+
+## Examples
+
+```html
+{{/* ❌ BAD — extra wrapper for layout */}}
+<div class="blog-card">
+  <div class="blog-card__inner">
+    <h2>{{ .Title }}</h2>
+  </div>
+</div>
+
+{{/* ✅ GOOD — semantic, flat */}}
+<article>
+  <h2>{{ .Title }}</h2>
+</article>
+```
+
+```scss
+// ❌ BAD — three breakpoints for one spacing scale
+.title { font-size: 1.25rem; }
+@media (min-width: 768px) { .title { font-size: 1.5rem; } }
+@media (min-width: 1024px) { .title { font-size: 1.75rem; } }
+
+// ✅ GOOD — one line, no media queries
+.title { font-size: clamp(1.25rem, 1rem + 1vw, 1.75rem); }
+```
+
+## After Every Edit
+
+Report the net line count difference (e.g. `−12 lines`). If lines increased, explain why and offer a leaner alternative.
