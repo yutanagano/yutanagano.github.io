@@ -42,27 +42,25 @@ process that generated the data (i.e. whether there seems to be a real change
 in blood pressure).
 
 Where can we start? Well, since our data points are continuous variables
-resulting from complex biological processes, we could invoke the [central limit
-theorem](https://www.youtube.com/watch?v=zeJD6dqJ5lo) to assume that the data
-is likely distributed according to a [normal
+resulting from complex biological processes, it might be reasonable to assume
+that the data is likely distributed according to a [normal
 distribution](https://en.wikipedia.org/wiki/Normal_distribution). If $f$ is a
 normal distribution, it can be described by two parameters: its mean and
-variance. To make our lives simple, let's just fix $f$'s variance as the
-empirical variance $\hat{\sigma}^2$ as seen in the data $\mathbf{x}$. This is
-an oversimplification, and we technically shouldn't do this, but for the sake
-of simplicity we will pretend we don't have to worry about the variance. That
-leaves us with one free parameter, the mean, to play around with. We will
-assign the symbol $\theta$ to the mean parameter, so that the [probability
-density function](https://en.wikipedia.org/wiki/Probability_density_function)
-$f$ can be written as:
+variance. To make our lives simple, let's assume the true population variance
+$\sigma^2$ is already known to us (perhaps from extensive prior biological
+studies on this drug). That leaves us with one free parameter, the mean, to
+play around with. We will assign the symbol $\theta$ to the mean parameter, so
+that the [probability density
+function](https://en.wikipedia.org/wiki/Probability_density_function) $f$ can
+be written as:
 
 $$
-f(x | \theta) = \frac{1}{\hat{\sigma} \sqrt{2\pi}} e^{ -\frac{1}{2} \left( \frac{x-\theta}{\hat{\sigma}}\right)^2 }
+f(x | \theta) = \frac{1}{\sigma \sqrt{2\pi}} e^{ -\frac{1}{2} \left( \frac{x-\theta}{\sigma}\right)^2 }
 $$
 
 Now we can start to discuss our hypothesis test in a more precise language. We
 think that our data $\mathbf{x}$ comes from a normal distribution like $f$. We
-also think that if the drug really causes increases in blood pressure, our
+also think that if the drug really causes increases in blood pressure, our data
 should be centered around a positive value, which means that $\theta$ should be
 positive, and vice versa ($\theta < 0$) if there is a reduction in blood
 pressure. If there is no effect, then we would expect $\theta = 0$. As you can
@@ -96,12 +94,22 @@ based on the data $\mathbf{x}$?
 ## 2. Pick a hypothesis testing framework
 
 We need a system where we can use the available data to compute some
-statistic, then depending on the value of the statistic, either reject or
-accept $H_0$. There are many strategies/frameworks with which one can come up
-with a test statistic, but for this example let’s use the very common and
+statistic, then depending on the value of the statistic, either reject
+$H_0$ or not. There are many strategies/frameworks with which one can come up
+with a test statistic[^1], but for this example let’s use the very common and
 useful [likelihood ratio
 test](https://en.wikipedia.org/wiki/Likelihood-ratio_test) (LRT). The LRT
 involves a test statistic $\lambda$ of the form:
+
+[^1]:
+    The LRT framework chosen for this article is an example of a
+    [frequentist](https://en.wikipedia.org/wiki/Frequentist_inference) test
+    framework. Other examples of frequentist frameworks include the [Wald
+    test](https://en.wikipedia.org/wiki/Wald_test) and [score
+    test](https://en.wikipedia.org/wiki/Score_test). Of course, there is an
+    entire world of [Bayesian
+    inference](https://en.wikipedia.org/wiki/Bayesian_inference) out there as
+    well, but this is all a bit outside the scope of this article.
 
 $$
 \lambda(\mathbf{x}) = \frac{
@@ -113,7 +121,8 @@ $$
 
 Here, $\mathcal{L}$ signifies the [likelihood
 function](https://en.wikipedia.org/wiki/Likelihood_function). LRTs have a
-rejection region $R \subset \mathcal{X}$ of the form: $R = \{\mathbf{x}:
+rejection region $R \subset \mathcal{X}$ (here $\mathcal{X}$ is the space of
+all possible set of $n$ data points) of the form: $R = \{\mathbf{x}:
 \lambda(\mathbf{x}) \leq c\}$ with $c$ some constant.
 
 > What is the constant $c$ in the definition of the rejection region? What does
@@ -146,9 +155,9 @@ $$
 \begin{aligned}
     \mathcal{L}(\theta | \mathbf{x}) &=
         \prod_{x \in \mathbf{x}}{
-            \frac{1}{\hat{\sigma} \sqrt{2\pi}} e^{ -\frac{1}{2} \left( \frac{x - \theta}{ \hat{\sigma} } \right)^2}
+            \frac{1}{\sigma \sqrt{2\pi}} e^{ -\frac{1}{2} \left( \frac{x - \theta}{ \sigma } \right)^2}
         }\\
-    &= \left(\frac{1}{\hat{\sigma} \sqrt{2\pi}} \right)^n e^{-\frac{1}{2\hat{\sigma}^2}\sum_{x \in \mathbf{x}}(x - \theta)^2}
+    &= \left(\frac{1}{\sigma \sqrt{2\pi}} \right)^n e^{-\frac{1}{2{\sigma}^2}\sum_{x \in \mathbf{x}}(x - \theta)^2}
 \end{aligned}
 $$
 
@@ -167,14 +176,14 @@ likelihood function is maximised, is called the [maximum likelihood
 estimate](https://en.wikipedia.org/wiki/Maximum_likelihood_estimation) (MLE) of
 $\theta$ given $\mathbf{x}$.
 
-To work out the MLE of $\theta$ for a univariate normal, we can set $\frac{d}{d\theta}\mathcal{L(\theta|\mathbf{x})} = 0$.
+To work out the MLE of $\theta$ for a univariate normal, we can set $\frac{d}{d\theta}\mathcal{L}(\theta|\mathbf{x}) = 0$.
 
 $$
 \frac{d}{d\theta} \mathcal{L}(\theta | \mathbf{x}) =
-    \frac{\mathcal{L}(\theta | \mathbf{x})}{\hat{\sigma}^2} \sum_{x \in \mathbf{x}}(x - \theta)
+    \frac{\mathcal{L}(\theta | \mathbf{x})}{{\sigma}^2} \sum_{x \in \mathbf{x}}(x - \theta)
 $$
 
-Since $\frac{\mathcal{L}(\theta | \mathbf{x})}{\hat{\sigma}^2}$ can never equal zero,
+Since $\frac{\mathcal{L}(\theta | \mathbf{x})}{{\sigma}^2}$ can never equal zero,
 
 $$
 \begin{aligned}
@@ -194,9 +203,9 @@ $$
 \begin{aligned}
     \lambda(\mathbf{x})
     &= \frac{\mathcal{L}(0 | \mathbf{x})}{\mathcal{L}(\bar{x} | \mathbf{x})}\\
-    &= \exp\left[{\frac{1}{2\hat{\sigma}^2}\left(\sum_{x \in \mathbf{x}}(x-\bar{x})^2 - \sum_{x \in \mathbf{x}}x^2\right)}\right]\\
-    &= \exp\left[{\frac{1}{2\hat{\sigma}^2}\left(-2\bar{x}\sum_{x \in \mathbf{x}}x + \sum_{x \in \mathbf{x}}\bar{x}^2 \right)}\right]\\
-    &= \exp\left[\frac{-n\bar{x}^2}{2\hat{\sigma}^2}\right]\\
+    &= \exp\left[{\frac{1}{2{\sigma}^2}\left(\sum_{x \in \mathbf{x}}(x-\bar{x})^2 - \sum_{x \in \mathbf{x}}x^2\right)}\right]\\
+    &= \exp\left[{\frac{1}{2{\sigma}^2}\left(-2\bar{x}\sum_{x \in \mathbf{x}}x + \sum_{x \in \mathbf{x}}\bar{x}^2 \right)}\right]\\
+    &= \exp\left[\frac{-n\bar{x}^2}{2{\sigma}^2}\right]\\
 \end{aligned}
 $$
 
@@ -206,8 +215,8 @@ $$
 \begin{aligned}
     R
     &= \{\mathbf{x}: \lambda(\mathbf{x}) \leq c\}\\
-    &= \left\{\mathbf{x}: \exp\left[\frac{-n\bar{x}^2}{2\hat{\sigma}^2}\right] \leq c\right\}\\
-    &= \left\{\mathbf{x}: |\bar{x}| \geq \sqrt{\frac{-2\hat{\sigma}^2\log{c}}{n}}\right\}
+    &= \left\{\mathbf{x}: \exp\left[\frac{-n\bar{x}^2}{2{\sigma}^2}\right] \leq c\right\}\\
+    &= \left\{\mathbf{x}: |\bar{x}| \geq \sqrt{\frac{-2{\sigma}^2\log{c}}{n}}\right\}
 \end{aligned}
 $$
 
@@ -254,12 +263,12 @@ If you have worked in biology or medicine, you often hear about data showing
 "statistical significance" with a "$p$ value less than 0.05". You may also
 remember being taught the meaning of a $p$ value being less than 0.05. That is,
 if there is no real signal (e.g. no real difference between two groups of
-data), then the probability of seeing a signal as large as what the data shows
-is less than 0.05. Well, now that you've been introduced to some statistics
-jargon, you can equivalently say that such hypothesis tests have a size or
-level ($\alpha$) of 0.05. Another way of thinking about this is that $\alpha$
-is basically a threshold such that if the $p$ value is less than $\alpha$, you
-reject the null hypothesis.
+data), then the probability of seeing a signal as large as or larger than what
+the data shows is less than 0.05. Well, now that you've been introduced to some
+statistics jargon, you can equivalently say that such hypothesis tests have a
+size or level ($\alpha$) of 0.05. Another way of thinking about this is that
+$\alpha$ is basically a threshold such that if the $p$ value is less than
+$\alpha$, you reject the null hypothesis.
 
 With this in mind, let's say that we want our hypothesis test to be of size
 0.05. That is, a maximum type 1 error probability of 5%. We can calibrate our
@@ -273,15 +282,15 @@ $$
 \begin{aligned}
     \sup_{\theta \in \Theta_0}P(\mathbf{x} \in R | \theta)
     &= P_{\theta=0}(\mathbf{x} \in R)\\
-    &= P_{\theta = 0}\left( |\bar{x}| \geq \sqrt{\frac{-2\hat{\sigma}^2\log{c}}{n}} \right)\\
-    &= P_{\theta = 0}\left( \frac{\sqrt{n}}{\hat{\sigma}}|\bar{x}| \geq \sqrt{-2\log{c}} \right)
+    &= P_{\theta = 0}\left( |\bar{x}| \geq \sqrt{\frac{-2{\sigma}^2\log{c}}{n}} \right)\\
+    &= P_{\theta = 0}\left( \frac{\sqrt{n}}{{\sigma}}|\bar{x}| \geq \sqrt{-2\log{c}} \right)
 \end{aligned}
 $$
 
-Since $\frac{\sqrt{n}}{\hat{\sigma}}|\bar{x} - \theta| \sim \mathcal{N}(0,1)$, and
+Since $\frac{\sqrt{n}}{{\sigma}}(\bar{x} - \theta) \sim \mathcal{N}(0,1)$, and
 $\theta = 0$:
 
-$$P_{\theta = 0}\left( \frac{\sqrt{n}}{\hat{\sigma}}|\bar{x}| \geq \sqrt{-2\log{c}} \right) = 2 \times P(Z \geq \sqrt{-2\log{c}})$$
+$$P_{\theta = 0}\left( \frac{\sqrt{n}}{{\sigma}}|\bar{x}| \geq \sqrt{-2\log{c}} \right) = 2 \times P(Z \geq \sqrt{-2\log{c}})$$
 
 Where $Z \sim \mathcal{N}(0,1)$. Now we want this probability to be 0.05, or
 $\frac{1}{20}$. Let $z_{\alpha}$ denote the critical point such that $P(Z \geq
@@ -299,7 +308,7 @@ $$
 Et voila! We now have our threshold $c$, calibrated so that our test is of size 0.05.
 Armed with this $c$, all you have left to do is to check whether the following is true:
 
-$$|\bar{x}| \geq \sqrt{\frac{-2\hat{\sigma}^2\log{c}}{n}}$$
+$$|\bar{x}| \geq \sqrt{\frac{-2{\sigma}^2\log{c}}{n}}$$
 
 If yes, then according to our test design and assumptions, you can reject
-$H_0$. If not, then you should accept $H_0$.
+$H_0$. If not, then you cannot reject $H_0$.
