@@ -20,8 +20,16 @@
   {{ range sort hugo.Data.software.projects "weight" }}
   {{ $project := . }}
   <li class="software-card">
-    <h2 class="software-card-name">{{ $project.name }}</h2>
-    <p class="software-card-role">{{ $project.role }}</p>
+    <div class="software-card-header">
+      <div class="software-card-identity">
+        <h2 class="software-card-name">{{ $project.name }}</h2>
+        <span class="software-card-role">{{ $project.role }}</span>
+      </div>
+      <div class="software-card-meta">
+        <span class="software-stage software-stage--{{ $project.stage | urlize }}">{{ $project.stage }}</span>
+        <span class="software-language">{{ $project.language }}</span>
+      </div>
+    </div>
     <p class="software-card-description">{{ $project.description }}</p>
     {{ with $project.links }}
     <div class="software-card-links" aria-label="Project links for {{ $project.name }}">
@@ -38,10 +46,6 @@
       {{ end }}
     </div>
     {{ end }}
-    <div class="software-card-meta">
-      <span class="software-stage software-stage--{{ $project.stage | urlize }}">{{ $project.stage }}</span>
-      <span class="software-language">{{ $project.language }}</span>
-    </div>
   </li>
   {{ end }}
 </ul>
