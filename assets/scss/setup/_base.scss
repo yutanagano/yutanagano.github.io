@@ -120,7 +120,9 @@ hr {
 }
 
 blockquote {
-  margin: 0;
+  margin-top: 0;
+  margin-left: 0;
+  margin-right: 0;
   padding: 0 0 0 1em;
   border-left: 0.25em solid var(--border-color-softer);
   color: var(--text-color-softer);
