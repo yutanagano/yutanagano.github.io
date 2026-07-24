@@ -6,8 +6,7 @@
 
 .software-card {
   margin: 0;
-  @include entry.entry-card-shell;
-  padding: var(--entry-card-padding-block) var(--entry-card-padding-inline);
+  @include entry.entry-card-surface;
 }
 
 .software-card-header {
@@ -55,8 +54,6 @@
   align-items: center;
   gap: 0.375rem;
   padding: 0.25rem 0.625rem;
-  color: var(--text-color-normal);
-  text-decoration: none;
   font-size: 0.875rem;
   line-height: 1.4;
 }

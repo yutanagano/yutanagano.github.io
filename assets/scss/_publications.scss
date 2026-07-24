@@ -9,18 +9,12 @@
   min-width: 0;
 }
 
-.publication-card-link,
 .publication-card-surface {
-  @include entry.entry-card-shell;
-  display: block;
-  box-sizing: border-box;
-  padding: var(--entry-card-padding-block) var(--entry-card-padding-inline);
+  @include entry.entry-card-surface;
 }
 
 .publication-card-link {
-  @include entry.entry-interactive-surface;
-  color: var(--text-color-normal);
-  text-decoration: none;
+  @include entry.entry-card-link;
 }
 
 .publication-card-header {
@@ -29,7 +23,6 @@
 
 .publication-card-title {
   @include entry.entry-card-title;
-  font-weight: bold;
 }
 
 .publication-card-year {

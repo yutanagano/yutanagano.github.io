@@ -13,6 +13,12 @@
   background-color: var(--background-color);
 }
 
+@mixin entry-card-surface {
+  @include entry-card-shell;
+  display: block;
+  padding: var(--entry-card-padding);
+}
+
 @mixin entry-row-header {
   display: flex;
   justify-content: space-between;
@@ -26,6 +32,8 @@
 }
 
 @mixin entry-interactive-surface {
+  color: var(--text-color-normal);
+  text-decoration: none;
   transition:
     border-color 0.15s ease,
     background-color 0.15s ease;
@@ -35,6 +43,11 @@
     background-color: var(--background-color-softer);
     color: var(--text-color-normal);
   }
+}
+
+@mixin entry-card-link {
+  @include entry-card-surface;
+  @include entry-interactive-surface;
 }
 
 @mixin entry-tag {

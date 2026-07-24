@@ -30,14 +30,7 @@
 }
 
 .blog-entry-link {
-  @include entry.entry-card-shell;
-  @include entry.entry-interactive-surface;
-  display: block;
-  width: 100%;
-  box-sizing: border-box;
-  padding: var(--entry-card-padding-block) var(--entry-card-padding-inline);
-  color: var(--text-color-normal);
-  text-decoration: none;
+  @include entry.entry-card-link;
 }
 
 .blog-entry-header {
