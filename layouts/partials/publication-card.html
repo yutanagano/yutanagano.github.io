@@ -1,0 +1,28 @@
+{{ $pub := . }}
+{{ if $pub.url }}
+<a href="{{ $pub.url }}"
+   class="publication-card-link"
+   target="_blank"
+   rel="noopener noreferrer"
+   aria-label="{{ $pub.title }} — {{ $pub.venue }} ({{ $pub.year }})">
+{{ else }}
+<div class="publication-card-surface">
+{{ end }}
+  <div class="publication-card-header">
+    <h2 class="publication-card-title">{{ $pub.title }}</h2>
+    <span class="publication-card-year">{{ $pub.year }}</span>
+  </div>
+  {{ with $pub.keywords }}
+  <div class="publication-card-keywords">
+    {{ range . }}
+    <span class="publication-keyword">{{ . }}</span>
+    {{ end }}
+  </div>
+  {{ end }}
+  <p class="publication-card-authors">{{ $pub.authors }}</p>
+  <p class="publication-card-venue">{{ $pub.venue }}</p>
+{{ if $pub.url }}
+</a>
+{{ else }}
+</div>
+{{ end }}

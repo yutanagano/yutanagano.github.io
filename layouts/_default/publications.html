@@ -1,0 +1,10 @@
+{{ define "main" }}
+<h1>{{ partial "title-with-accent.html" "Publications" }}</h1>
+<ul class="publication-list">
+  {{ range sort hugo.Data.publications.publications "weight" }}
+  <li class="publication-card">
+    {{ partial "publication-card.html" . }}
+  </li>
+  {{ end }}
+</ul>
+{{ end }}

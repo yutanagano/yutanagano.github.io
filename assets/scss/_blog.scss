@@ -1,26 +1,19 @@
+@use "entry-list" as entry;
+
 .blog-list {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  display: flex;
-  flex-direction: column;
-  gap: var(--space-xs);
+  @include entry.entry-list;
 }
 
-.blog-post-header {
-  .blog-meta {
-    margin-top: 0;
-    margin-bottom: var(--space-lg);
-    font-size: 0.875rem;
-    color: var(--text-color-softer);
-  }
+.blog-meta {
+  margin-top: 0;
+  margin-bottom: var(--space-lg);
+  @include entry.entry-meta-text;
 }
 
 .blog-back {
   margin-top: 0;
   margin-bottom: var(--space-md);
-  font-size: 0.875rem;
-  color: var(--text-color-softer);
+  @include entry.entry-meta-text;
 }
 
 .blog-post-nav--end {
@@ -37,27 +30,18 @@
 }
 
 .blog-entry-link {
-  display: flex;
-  justify-content: space-between;
-  align-items: baseline;
-  gap: 1rem;
+  @include entry.entry-card-shell;
+  @include entry.entry-interactive-surface;
+  display: block;
   width: 100%;
   box-sizing: border-box;
-  padding: 0.5rem 0.75rem;
-  border: 1px solid var(--border-color-softer);
-  border-radius: 4px;
-  background-color: var(--background-color);
+  padding: var(--entry-card-padding-block) var(--entry-card-padding-inline);
   color: var(--text-color-normal);
   text-decoration: none;
-  transition:
-    border-color 0.15s ease,
-    background-color 0.15s ease;
+}
 
-  &:hover {
-    border-color: var(--accent-color);
-    background-color: var(--background-color-softer);
-    color: var(--text-color-normal);
-  }
+.blog-entry-header {
+  @include entry.entry-card-header;
 }
 
 .blog-entry-title {
@@ -66,8 +50,13 @@
 }
 
 .blog-entry-date {
-  flex-shrink: 0;
-  white-space: nowrap;
-  font-size: 0.875rem;
-  color: var(--text-color-softer);
+  @include entry.entry-meta-aside;
+}
+
+.blog-entry-keywords {
+  @include entry.entry-keywords-row;
+}
+
+.blog-entry-keyword {
+  @include entry.entry-tag-pill-accent;
 }

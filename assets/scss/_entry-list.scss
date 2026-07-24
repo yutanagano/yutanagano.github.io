@@ -1,0 +1,105 @@
+@mixin entry-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: var(--entry-list-gap);
+}
+
+@mixin entry-card-shell {
+  border: 1px solid var(--border-color-softer);
+  border-radius: 4px;
+  background-color: var(--background-color);
+}
+
+@mixin entry-row-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: var(--entry-header-gap);
+}
+
+@mixin entry-meta-text {
+  font-size: 0.875rem;
+  color: var(--text-color-softer);
+}
+
+@mixin entry-interactive-surface {
+  transition:
+    border-color 0.15s ease,
+    background-color 0.15s ease;
+
+  &:hover {
+    border-color: var(--accent-color);
+    background-color: var(--background-color-softer);
+    color: var(--text-color-normal);
+  }
+}
+
+@mixin entry-tag {
+  display: inline-block;
+  padding: 0.125rem 0.5rem;
+  border-radius: 999px;
+  font-size: 0.75rem;
+  line-height: 1.4;
+  background-color: var(--background-color-softer);
+  color: var(--text-color-softer);
+}
+
+@mixin entry-tag-accent {
+  background-color: hsl(var(--accent-hue), 86%, 95%);
+  color: var(--accent-color);
+
+  @media (prefers-color-scheme: dark) {
+    background-color: hsl(var(--accent-hue), 30%, 22%);
+    color: var(--accent-color);
+  }
+}
+
+@mixin entry-card-title {
+  margin: 0;
+  min-width: 0;
+  font-size: 1.3rem;
+  line-height: 1.25;
+}
+
+@mixin entry-meta-aside {
+  @include entry-meta-text;
+  flex-shrink: 0;
+  white-space: nowrap;
+}
+
+@mixin entry-header-stack-mobile {
+  @media (max-width: 640px) {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: var(--space-xs);
+  }
+}
+
+@mixin entry-card-header {
+  @include entry-row-header;
+  margin-bottom: var(--entry-body-gap);
+  @include entry-header-stack-mobile;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+@mixin entry-keywords-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-xs);
+  margin-bottom: var(--entry-body-gap);
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+@mixin entry-tag-pill-accent {
+  @include entry-tag;
+  @include entry-tag-accent;
+}

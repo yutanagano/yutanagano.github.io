@@ -1,0 +1,18 @@
+github:
+  icon: fa-brands fa-github
+  label: GitHub
+pypi:
+  icon: fa-brands fa-python
+  label: PyPI
+crates:
+  icon: fa-brands fa-rust
+  label: crates.io
+docs:
+  icon: fa-solid fa-book
+  label: Documentation
+home:
+  icon: fa-solid fa-globe
+  label: Homepage
+npm:
+  icon: fa-brands fa-npm
+  label: npm

@@ -8,7 +8,7 @@ For an overview of my output, please see my [**recent publications**]({{< ref "p
 
 ## Education
 
-<div class="u-x-overflow-box">
+{{% overflow-table %}}
 
 | Year      | Programme                                            | Institution               |
 | --------- | ---------------------------------------------------- | ------------------------- |
@@ -16,7 +16,7 @@ For an overview of my output, please see my [**recent publications**]({{< ref "p
 | 2021-2024 | **PhD**, Computational Immunology & Machine Learning | University College London |
 | 2019-2020 | **BSc** Immunology, Infection and Cell Pathology     | University College London |
 
-</div>
+{{% /overflow-table %}}
 
 ## Scholarship programmes
 
@@ -27,7 +27,7 @@ For an overview of my output, please see my [**recent publications**]({{< ref "p
 
 ## Academic awards
 
-<div class="u-x-overflow-box">
+{{< overflow-table >}}
   <table>
     <tr>
       <th>Category</th>
@@ -62,7 +62,7 @@ For an overview of my output, please see my [**recent publications**]({{< ref "p
       </td>
     </tr>
   </table>
-</div>
+{{< /overflow-table >}}
 
 For earlier awards, please see [below](#early-academic-awards).
 
@@ -81,7 +81,7 @@ For earlier awards, please see [below](#early-academic-awards).
 For a list of my publications, please see the [publications page]({{< ref
 "publications" >}}). Below is a list of my earliest and unpublished work.
 
-<div class="u-x-overflow-box">
+{{< overflow-table >}}
   <table>
     <tr>
       <th>Category</th>
@@ -99,28 +99,28 @@ For a list of my publications, please see the [publications page]({{< ref
       <td>2020</td>
     </tr>
     <tr>
-      <td style="padding-left: 15px;">Automating Cell Image Analysis Through Deep Learning</td>
+      <td class="u-indent-cell">Automating Cell Image Analysis Through Deep Learning</td>
       <td>
         In this summer internship project at the UCL Cancer Institute, I developed a convolutional neural network-based computer vision program that can take in various types of scientific image data and accurately output the numbers and locations of objects of interest (such as cells or worms) seen in the image.
       </td>
       <td>2019</td>
     </tr>
     <tr>
-      <td style="padding-left: 15px;">Modelling Air Pollution and Climate Change</td>
+      <td class="u-indent-cell">Modelling Air Pollution and Climate Change</td>
       <td>
         For a sixth-form science competition, I developed a real-time simulation modelling the effects of air pollution and deforestation on the Earth's surface temperature.
       </td>
       <td>2017</td>
     </tr>
     <tr>
-      <td style="padding-left: 15px;">Determining Optimum Investments in Monopoly</td>
+      <td class="u-indent-cell">Determining Optimum Investments in Monopoly</td>
       <td>
         For my higher-level International Baccalaureate mathematics class, I used a Markov chain model to determine best investment strategies in the game of Monopoly.
       </td>
       <td>2017</td>
     </tr>
     <tr>
-      <td style="padding-left: 15px;">Modelling the Spread of Infectious Disease</td>
+      <td class="u-indent-cell">Modelling the Spread of Infectious Disease</td>
       <td>
         As part of my higher-level International Baccalaureate biology class, I investigated and critiqued the SEIR compartmental model of infection.
       </td>
@@ -135,21 +135,21 @@ For a list of my publications, please see the [publications page]({{< ref
       <td>2019</td>
     </tr>
     <tr>
-      <td style="padding-left: 15px;">Working with <i>Drosophila</i></td>
+      <td class="u-indent-cell">Working with <i>Drosophila</i></td>
       <td>
         Gained basic <i>Drosophila</i> wet lab training and experience at the UCL Institute of Aging.
       </td>
       <td>2018</td>
     </tr>
     <tr>
-      <td style="padding-left: 15px;">Primitive Intelligence in <i>Physarum polycephalum</i></td>
+      <td class="u-indent-cell">Primitive Intelligence in <i>Physarum polycephalum</i></td>
       <td>
         For my extended essay for the International Baccalaureate programme, I conducted my own experiments cross-examining a theory on the underlying physical mechanisms of intelligent behaviour in <i>P. polycephalum</i>, an amoeboid organism.
       </td>
       <td>2017</td>
     </tr>
   </table>
-</div>
+{{< /overflow-table >}}
 
 ### Early academic awards
 
@@ -170,7 +170,7 @@ For a list of my publications, please see the [publications page]({{< ref
 
 ### Languages
 
-<div class="u-x-overflow-box">
+{{% overflow-table %}}
 
 | Language           | Proficiency  |
 | ------------------ | ------------ |
@@ -181,4 +181,4 @@ For a list of my publications, please see the [publications page]({{< ref
 | Français (French)  | Beginner     |
 | Nederlands (Dutch) | Beginner     |
 
-</div>
+{{% /overflow-table %}}

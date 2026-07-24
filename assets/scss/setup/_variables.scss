@@ -16,15 +16,18 @@
   --background-color-softer: hsl(var(--theme-hue), 0%, 95%);
   --code-background: hsl(var(--theme-hue), 0%, 95%);
 
-  --button-primary-color: white;
-  --grid-max-width: 960px;
-
   --space-xs: 0.5rem;
   --space-sm: 0.75rem;
   --space-md: 1.25rem;
   --space-lg: 2rem;
   --space-xl: 2.5rem;
   --space-2xl: 3rem;
+
+  --entry-list-gap: var(--space-md);
+  --entry-card-padding-block: var(--space-md);
+  --entry-card-padding-inline: var(--space-md);
+  --entry-header-gap: 1rem;
+  --entry-body-gap: var(--space-sm);
 }
 
 @media (prefers-color-scheme: dark) {
@@ -42,9 +45,5 @@
 
     --accent-color: hsl(var(--accent-hue), 76%, 68%);
     --accent-color-hover: hsl(var(--accent-hue), 86%, 76%);
-  }
-
-  img.value-img {
-    filter: invert(0.8);
   }
 }
