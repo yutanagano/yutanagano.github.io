@@ -1,5 +1,5 @@
 {{ define "main" }}
 <h1>{{ .Title }}<span class="highlight">.</span></h1>
-<p>{{ .Date.Format "January 2, 2006" }}</p>
+<p class="blog-meta">{{ .Date.Format "January 2, 2006" }}</p>
 {{ .Content }}
 {{ end }}

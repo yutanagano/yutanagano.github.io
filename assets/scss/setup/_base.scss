@@ -18,20 +18,19 @@ body {
 }
 
 // Typography
-p {
-  margin-top: 0;
-  margin-bottom: 1.5rem;
-}
-
 h1,
 h2,
 h3,
 h4,
 h5,
 h6 {
-  margin-top: 0;
-  margin-bottom: 2rem;
+  margin-top: var(--space-xl);
+  margin-bottom: var(--space-sm);
   line-height: 1.25;
+}
+
+h1:first-child {
+  margin-top: 0;
 }
 
 h1 {
@@ -86,17 +85,24 @@ a {
   }
 }
 
-// Vertical rhythm
+// Vertical rhythm — spacing between stacked blocks comes from margin-bottom only.
 button,
 .button {
-  margin-bottom: 1rem;
+  margin-top: 0;
+  margin-bottom: var(--space-sm);
 }
 
 input,
 textarea,
 select,
 fieldset {
-  margin-bottom: 1.5rem;
+  margin-top: 0;
+  margin-bottom: var(--space-md);
+}
+
+p {
+  margin-top: 0;
+  margin-bottom: var(--space-md);
 }
 
 pre,
@@ -104,23 +110,26 @@ blockquote,
 dl,
 figure,
 table,
-p,
-ul,
-ol,
 form {
-  margin-bottom: 2.5rem;
+  margin-top: 0;
+  margin-bottom: var(--space-lg);
+}
+
+ul,
+ol {
+  margin-top: 0;
+  margin-bottom: var(--space-lg);
 }
 
 // Misc content elements
 hr {
-  margin-top: 3rem;
-  margin-bottom: 3.5rem;
+  margin-top: var(--space-xl);
+  margin-bottom: var(--space-2xl);
   border-width: 0;
   border-top: 1px solid var(--border-color-softer);
 }
 
 blockquote {
-  margin-top: 0;
   margin-left: 0;
   margin-right: 0;
   padding: 0 0 0 1em;
