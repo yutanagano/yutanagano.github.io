@@ -1,0 +1,61 @@
+projects:
+  - name: sceptr
+    role: "author, maintainer"
+    description: >
+      SCEPTR (Simple Contrastive Embedding of the Primary sequence of T cell
+      Receptors) is a small and fast TCR langauge model that produces highly
+      informative TCR embeddings for accurate downstream TCR specificity
+      prediction and clustering.
+    links:
+      - type: pypi
+        url: https://pypi.org/project/sceptr/
+    stage: production
+    language: Python
+    weight: 1
+
+  - name: tidytcells
+    role: "author, maintainer"
+    description: >
+      A lightweight Python package that cleans and standardizes T cell receptor
+      (TR), Major Histocompatibility (MH), and Immunoglobulin (IG) data to be
+      IMGT-compliant.
+    links:
+      - type: pypi
+        url: https://pypi.org/project/tidytcells/
+    stage: production
+    language: Python
+    weight: 2
+
+  - name: symscan
+    role: "author, maintainer"
+    description: >
+      A tool for fast discovery of similar strings in bulk.
+    links:
+      - type: github
+        url: https://github.com/yutanagano/nearust
+    stage: beta
+    language: Rust
+    weight: 3
+
+  - name: smark.nvim
+    role: "author, maintainer"
+    description: >
+      A smart, Prettier-compatible Markdown auto-bullet list plugin for NeoVim.
+    links:
+      - type: github
+        url: https://github.com/yutanagano/smark.nvim
+    stage: production
+    language: Lua
+    weight: 4
+
+  - name: pyrepseq
+    role: contributor
+    description: >
+      A Python library that provides algorithms and visualization tools to speed
+      up the analysis of immune repertoire sequencing data.
+    links:
+      - type: pypi
+        url: https://pypi.org/project/pyrepseq/
+    stage: production
+    language: Python
+    weight: 5
