@@ -1,0 +1,38 @@
+@mixin entry-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: var(--entry-list-gap);
+}
+
+@mixin entry-card-shell {
+  border: 1px solid var(--border-color-softer);
+  border-radius: 4px;
+  background-color: var(--background-color);
+}
+
+@mixin entry-row-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: var(--entry-header-gap);
+}
+
+@mixin entry-meta-text {
+  font-size: 0.875rem;
+  color: var(--text-color-softer);
+}
+
+@mixin entry-interactive-surface {
+  transition:
+    border-color 0.15s ease,
+    background-color 0.15s ease;
+
+  &:hover {
+    border-color: var(--accent-color);
+    background-color: var(--background-color-softer);
+    color: var(--text-color-normal);
+  }
+}
