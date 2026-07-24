@@ -26,20 +26,16 @@
 .publication-card-header {
   @include entry.entry-row-header;
   margin-bottom: var(--entry-body-gap);
+  @include entry.entry-header-stack-mobile;
 }
 
 .publication-card-title {
-  margin: 0;
-  min-width: 0;
-  font-size: 1.3rem;
+  @include entry.entry-card-title;
   font-weight: bold;
-  line-height: 1.25;
 }
 
 .publication-card-year {
-  @include entry.entry-meta-text;
-  flex-shrink: 0;
-  white-space: nowrap;
+  @include entry.entry-meta-aside;
 }
 
 .publication-card-topics {
@@ -62,12 +58,4 @@
 
 .publication-card-authors {
   margin-bottom: var(--space-xs);
-}
-
-@media (max-width: 640px) {
-  .publication-card-header {
-    flex-direction: column;
-    align-items: flex-start;
-    gap: var(--space-xs);
-  }
 }

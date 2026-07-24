@@ -16,9 +16,6 @@
   --background-color-softer: hsl(var(--theme-hue), 0%, 95%);
   --code-background: hsl(var(--theme-hue), 0%, 95%);
 
-  --button-primary-color: white;
-  --grid-max-width: 960px;
-
   --space-xs: 0.5rem;
   --space-sm: 0.75rem;
   --space-md: 1.25rem;
@@ -48,9 +45,5 @@
 
     --accent-color: hsl(var(--accent-hue), 76%, 68%);
     --accent-color-hover: hsl(var(--accent-hue), 86%, 76%);
-  }
-
-  img.value-img {
-    filter: invert(0.8);
   }
 }

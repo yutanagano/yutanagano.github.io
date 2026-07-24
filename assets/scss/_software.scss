@@ -13,6 +13,7 @@
 .software-card-header {
   @include entry.entry-row-header;
   margin-bottom: var(--entry-body-gap);
+  @include entry.entry-header-stack-mobile;
 }
 
 .software-card-identity {
@@ -24,9 +25,7 @@
 }
 
 .software-card-name {
-  margin: 0;
-  font-size: 1.3rem;
-  line-height: 1.25;
+  @include entry.entry-card-title;
 }
 
 .software-card-role {
@@ -87,12 +86,6 @@
 }
 
 @media (max-width: 640px) {
-  .software-card-header {
-    flex-direction: column;
-    align-items: flex-start;
-    gap: var(--space-xs);
-  }
-
   .software-card-identity {
     flex-direction: column;
     align-items: flex-start;

@@ -4,20 +4,16 @@
   @include entry.entry-list;
 }
 
-.blog-post-header {
-  .blog-meta {
-    margin-top: 0;
-    margin-bottom: var(--space-lg);
-    font-size: 0.875rem;
-    color: var(--text-color-softer);
-  }
+.blog-meta {
+  margin-top: 0;
+  margin-bottom: var(--space-lg);
+  @include entry.entry-meta-text;
 }
 
 .blog-back {
   margin-top: 0;
   margin-bottom: var(--space-md);
-  font-size: 0.875rem;
-  color: var(--text-color-softer);
+  @include entry.entry-meta-text;
 }
 
 .blog-post-nav--end {
@@ -50,7 +46,5 @@
 }
 
 .blog-entry-date {
-  @include entry.entry-meta-text;
-  flex-shrink: 0;
-  white-space: nowrap;
+  @include entry.entry-meta-aside;
 }

@@ -1,5 +1,5 @@
 {{ define "main" }}
-<h1>Blog<span class="highlight">.</span></h1>
+<h1>{{ partial "title-with-accent.html" "Blog" }}</h1>
 <ul class="blog-list">
 	{{ range .Pages.ByDate.Reverse }}
 	<li class="blog-entry">

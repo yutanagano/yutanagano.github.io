@@ -1,21 +1,5 @@
 {{ define "main" }}
-{{ $icons := dict
-"github" "fa-brands fa-github"
-"pypi" "fa-brands fa-python"
-"crates" "fa-brands fa-rust"
-"docs" "fa-solid fa-book"
-"home" "fa-solid fa-globe"
-"npm" "fa-brands fa-npm"
-}}
-{{ $labels := dict
-"github" "GitHub"
-"pypi" "PyPI"
-"crates" "crates.io"
-"docs" "Documentation"
-"home" "Homepage"
-"npm" "npm"
-}}
-<h1>Software<span class="highlight">.</span></h1>
+<h1>{{ partial "title-with-accent.html" "Software" }}</h1>
 <ul class="software-list">
 	{{ range sort hugo.Data.software.projects "weight" }}
 	{{ $project := . }}
@@ -34,8 +18,9 @@
 		{{ with $project.links }}
 		<div class="software-card-links" aria-label="Project links for {{ $project.name }}">
 			{{ range . }}
-			{{ $icon := index $icons .type | default "fa-solid fa-arrow-up-right-from-square" }}
-			{{ $label := index $labels .type | default "link" }}
+			{{ $linkType := index hugo.Data.linktypes .type }}
+			{{ $icon := index $linkType "icon" | default "fa-solid fa-arrow-up-right-from-square" }}
+			{{ $label := index $linkType "label" | default "link" }}
 			<a href="{{ .url }}" class="software-link-chip" target="_blank" rel="noopener noreferrer">
 				<i class="{{ $icon }}" aria-hidden="true"></i>
 				<span>{{ $label }}</span>

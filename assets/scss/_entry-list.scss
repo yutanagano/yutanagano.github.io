@@ -56,3 +56,24 @@
     color: var(--accent-color);
   }
 }
+
+@mixin entry-card-title {
+  margin: 0;
+  min-width: 0;
+  font-size: 1.3rem;
+  line-height: 1.25;
+}
+
+@mixin entry-meta-aside {
+  @include entry-meta-text;
+  flex-shrink: 0;
+  white-space: nowrap;
+}
+
+@mixin entry-header-stack-mobile {
+  @media (max-width: 640px) {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: var(--space-xs);
+  }
+}

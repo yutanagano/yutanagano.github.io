@@ -11,17 +11,13 @@
 
   <nav id="desktop-nav">
     <ul>
-      {{ range site.Menus.main }}
-      <li><a href="{{ .URL }}">{{ .Name }}</a></li>
-      {{ end }}
+      {{ partial "menu-items.html" . }}
     </ul>
   </nav>
 </div>
 
 <nav id="mobile-nav">
   <ul>
-    {{ range site.Menus.main }}
-    <li><a href="{{ .URL }}">{{ .Name }}</a></li>
-    {{ end }}
+    {{ partial "menu-items.html" . }}
   </ul>
 </nav>
