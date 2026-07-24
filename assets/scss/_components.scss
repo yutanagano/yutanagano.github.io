@@ -8,10 +8,7 @@ header {
   a {
     color: black;
     font-weight: bold;
-    font-family:
-      Roboto Mono,
-      monospace,
-      sans-serif;
+    font-family: Roboto Mono, monospace, sans-serif;
     text-decoration: none;
   }
 
@@ -32,7 +29,6 @@ header {
 
   #menu-toggle-btn {
     display: none;
-
     fill: black;
     height: 2rem;
     width: 2rem;
@@ -43,47 +39,50 @@ header {
     border-radius: 0;
     box-sizing: content-box;
 
-    #hamburger[hidden] {
-      display: none;
-    }
-
+    #hamburger[hidden],
     #x-mark[hidden] {
       display: none;
     }
+
+    &:hover {
+      fill: var(--accent-color-hover);
+    }
   }
 
-  #menu-toggle-btn:hover {
-    fill: var(--accent-color-hover);
-  }
-
-  #desktop-nav ul {
+  %nav-list {
     display: flex;
-    flex-direction: row;
     list-style: none;
     margin: 0;
     padding: 0;
-    gap: 1rem;
 
     li {
       margin: 0;
     }
+  }
+
+  #desktop-nav ul {
+    @extend %nav-list;
+    flex-direction: row;
+    gap: 1rem;
   }
 
   #mobile-nav {
     display: none;
-  }
 
-  #mobile-nav ul {
-    display: flex;
-    flex-direction: column;
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    margin-top: 1rem;
+    ul {
+      @extend %nav-list;
+      flex-direction: column;
+      margin-top: 1rem;
 
-    li {
-      text-align: right;
-      margin: 0;
+      li {
+        text-align: right;
+      }
+    }
+
+    &.active {
+      @media screen and (max-width: 500px) {
+        display: block;
+      }
     }
   }
 
@@ -95,10 +94,6 @@ header {
     #desktop-nav {
       display: none;
     }
-
-    #mobile-nav.active {
-      display: block;
-    }
   }
 }
 
@@ -108,7 +103,6 @@ main {
 
 footer {
   height: 3rem;
-
   display: flex;
   justify-content: center;
   align-items: center;

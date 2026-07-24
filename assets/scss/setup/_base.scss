@@ -2,10 +2,13 @@
 @import url("https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap");
 
 html {
+  scroll-behavior: smooth;
   font-size: 16px;
 }
 
 body {
+  max-width: 1000px;
+  margin: 0 auto;
   font-size: 1rem;
   line-height: 1.5;
   font-weight: normal;
@@ -14,6 +17,7 @@ body {
   background-color: var(--background-color);
 }
 
+// Typography
 p {
   margin-top: 0;
   margin-bottom: 1.5rem;
@@ -51,19 +55,16 @@ h3 {
 h4 {
   font-weight: normal;
   font-size: 1.3rem;
-  letter-spacing: 0;
 }
 
 h5 {
   font-weight: normal;
   font-size: 1rem;
-  letter-spacing: 0;
 }
 
 h6 {
   font-weight: normal;
   font-size: 0.7rem;
-  letter-spacing: 0;
 }
 
 .highlight {
@@ -73,5 +74,58 @@ h6 {
 @media (min-width: 900px) {
   html {
     font-size: 18px;
+  }
+}
+
+// Links
+a {
+  color: var(--accent-color);
+
+  &:hover {
+    color: var(--accent-color-hover);
+  }
+}
+
+// Vertical rhythm
+button,
+.button {
+  margin-bottom: 1rem;
+}
+
+input,
+textarea,
+select,
+fieldset {
+  margin-bottom: 1.5rem;
+}
+
+pre,
+blockquote,
+dl,
+figure,
+table,
+p,
+ul,
+ol,
+form {
+  margin-bottom: 2.5rem;
+}
+
+// Misc content elements
+hr {
+  margin-top: 3rem;
+  margin-bottom: 3.5rem;
+  border-width: 0;
+  border-top: 1px solid var(--border-color-softer);
+}
+
+blockquote {
+  margin: 0;
+  padding: 0 0 0 1em;
+  border-left: 0.25em solid var(--border-color-softer);
+  color: var(--text-color-softer);
+
+  > :last-child {
+    margin-bottom: 0;
   }
 }
