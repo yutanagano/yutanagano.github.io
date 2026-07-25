@@ -3,6 +3,19 @@
   overflow-x: auto;
 }
 
+.katex-display {
+  width: 100%;
+  overflow-x: auto;
+  overflow-y: hidden;
+  padding-bottom: 0.4em;
+}
+
+.u-x-overflow-box {
+  + :is(h2, h3, h4, h5, h6) {
+    margin-top: calc(var(--space-xl) - var(--space-lg));
+  }
+}
+
 .u-indent-cell {
   padding-left: 15px;
 }
