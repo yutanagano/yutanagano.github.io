@@ -1,6 +1,10 @@
 .u-x-overflow-box {
   width: 100%;
   overflow-x: auto;
+
+  + :is(h2, h3, h4, h5, h6) {
+    margin-top: calc(var(--space-xl) - var(--space-lg));
+  }
 }
 
 .u-indent-cell {
