@@ -27,6 +27,8 @@
   --entry-card-padding: var(--space-md);
   --entry-header-gap: 1rem;
   --entry-body-gap: var(--space-sm);
+
+  --interactive-transition: 0.15s ease;
 }
 
 @media (prefers-color-scheme: dark) {

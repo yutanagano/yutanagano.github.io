@@ -36,6 +36,7 @@ header {
   #menu-toggle-btn {
     display: none;
     color: var(--text-color-normal);
+    transition: color var(--interactive-transition);
     height: 2rem;
     width: 2rem;
     margin: 0;

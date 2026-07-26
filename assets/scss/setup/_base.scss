@@ -79,6 +79,7 @@ h6 {
 // Links
 a {
   color: var(--accent-color);
+  transition: color var(--interactive-transition);
 
   &:hover {
     color: var(--accent-color-hover);
