@@ -35,8 +35,8 @@
   color: var(--text-color-normal);
   text-decoration: none;
   transition:
-    border-color 0.15s ease,
-    background-color 0.15s ease;
+    border-color var(--interactive-transition),
+    background-color var(--interactive-transition);
 
   &:hover {
     border-color: var(--accent-color);

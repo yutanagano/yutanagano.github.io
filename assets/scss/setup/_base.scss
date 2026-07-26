@@ -37,6 +37,7 @@ h1 {
   font-weight: bold;
   font-size: 3rem;
   letter-spacing: -0.1rem;
+  margin-bottom: var(--space-md);
 }
 
 h2 {
@@ -79,6 +80,7 @@ h6 {
 // Links
 a {
   color: var(--accent-color);
+  transition: color var(--interactive-transition);
 
   &:hover {
     color: var(--accent-color-hover);

@@ -16,3 +16,18 @@ home:
 npm:
   icon: fa-brands fa-npm
   label: npm
+email:
+  icon: fa-solid fa-envelope
+  label: Email
+scholar:
+  icon: fa-brands fa-google-scholar
+  label: Google Scholar
+linkedin:
+  icon: fa-brands fa-linkedin
+  label: LinkedIn
+orcid:
+  icon: fa-brands fa-orcid
+  label: ORCID
+twitter:
+  icon: fa-brands fa-x-twitter
+  label: X

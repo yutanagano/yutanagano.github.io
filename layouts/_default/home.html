@@ -1,28 +1,37 @@
 {{ define "main" }}
 {{ $dp := resources.Get "images/avatar.jpg" }}
 <div id="landing-container">
-	<img src="{{ $dp.Permalink }}"
-	     alt="Image of Yuta Nagano"
-	     id="profile"
-	>
-	<div id="text-container">
-		<div id="hi">Hi, I'm</div>
-		<div id="name"><span class="highlight">Yuta Nagano</span>.</div>
-		<div id="links">
-			<a href="mailto:yutanagano51@proton.me"><i class="fa-solid fa-envelope"></i></a>
-			<a href="https://github.com/yutanagano"><i class="fa-brands fa-github"></i></a>
-			<a href="https://scholar.google.com/citations?user=d-MH8akAAAAJ&hl=en"><i class="fa-brands fa-google-scholar"></i></a>
-			<a href="https://orcid.org/0000-0002-1784-9276"><i class="fa-brands fa-orcid"></i></a>
-			<a href="https://soundcloud.com/yuta-nagano"><i class="fa-brands fa-soundcloud"></i></a>
-			<a href="https://x.com/YutaNotUtah"><i class="fa-brands fa-x-twitter"></i></a>
-			<a href="https://www.linkedin.com/in/yuta-nagano-3bb96a187"><i class="fa-brands fa-linkedin"></i></a>
+	<div id="landing-hero">
+		<img src="{{ $dp.Permalink }}"
+		     alt="Image of Yuta Nagano"
+		     id="profile"
+		>
+		<div id="landing-greeting">
+			<div id="hi">Hi, I'm</div>
+			<div id="name"><span class="highlight">Yuta Nagano</span>.</div>
 		</div>
-		<div id="description">
+	</div>
+
+	<div id="links" class="link-chip-group" aria-label="Profile links">
+		{{ range hugo.Data.profiles.links }}
+		{{ $linkType := index hugo.Data.linktypes .type }}
+		{{ $icon := index $linkType "icon" | default "fa-solid fa-arrow-up-right-from-square" }}
+		{{ $label := index $linkType "label" | default "link" }}
+		{{ $external := not (hasPrefix .url "mailto:") }}
+		<a href="{{ .url }}" class="link-chip" aria-label="{{ $label }}"{{ if $external }} target="_blank" rel="noopener noreferrer"{{ end }}>
+			<i class="{{ $icon }}" aria-hidden="true"></i>
+			<span class="link-chip-label">{{ $label }}</span>
+		</a>
+		{{ end }}
+	</div>
+
+	<div id="description">
+		<p>
 			I'm a medical doctor and postdoctorate researcher interested in mathematical modelling for biomedicine.
 			Currently, I work as a <a href="https://foundationprogramme.nhs.uk/programmes/2-year-foundation-programme/ukfp/specialised-foundation-programmes/">specialised foundation doctor</a>
 			at the <a href="https://www.royalfree.nhs.uk/">Royal Free London NHS Foundation Trust</a>, while continuing research work on machine learning methods to decode the underlying rules of the human T cell immune response.
 			I'm also an open-source developer of scientific software.
-		</div>
+		</p>
 	</div>
 </div>
 {{ end }}

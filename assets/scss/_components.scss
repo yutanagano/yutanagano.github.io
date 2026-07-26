@@ -1,5 +1,5 @@
 body {
-  padding: 2rem;
+  padding: var(--space-lg);
 }
 
 @media (max-width: 640px) {
@@ -36,6 +36,7 @@ header {
   #menu-toggle-btn {
     display: none;
     color: var(--text-color-normal);
+    transition: color var(--interactive-transition);
     height: 2rem;
     width: 2rem;
     margin: 0;
@@ -108,7 +109,7 @@ header {
 }
 
 main {
-  margin: 2rem 0;
+  margin: var(--space-lg) 0;
 }
 
 .site-footer {
