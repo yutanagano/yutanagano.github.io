@@ -1,5 +1,5 @@
 body {
-  padding: 2rem;
+  padding: var(--space-lg);
 }
 
 @media (max-width: 640px) {
@@ -109,7 +109,7 @@ header {
 }
 
 main {
-  margin: 2rem 0;
+  margin: var(--space-lg) 0;
 }
 
 .site-footer {
