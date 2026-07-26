@@ -19,7 +19,7 @@
 		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.17.0/dist/katex.min.css" integrity="sha384-vlBdW0r3AcZO/HboRPznQNowvexd3fY8qHOWkBi5q7KGgqJ+F48+DceybYmrVbmB" crossorigin="anonymous">
 		{{ end }}
 
-		<title>Yuta Nagano: Home</title>
+		<title>{{ if .IsHome }}Home{{ else }}{{ .Title }}{{ end }} | {{ .Site.Title }}</title>
 	</head>
 	<body>
 		<header>
