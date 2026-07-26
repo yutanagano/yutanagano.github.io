@@ -24,6 +24,10 @@
   width: 192px;
   border-radius: 100px;
   box-shadow: 0 0 10px #0005;
+
+  @media (prefers-color-scheme: dark) {
+    box-shadow: 0 0 10px #fff5;
+  }
 }
 
 #name {
