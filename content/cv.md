@@ -18,6 +18,16 @@ For an overview of my output, please see my [**recent publications**]({{< ref "p
 
 {{% /overflow-table %}}
 
+## Professional experience
+
+{{% overflow-table %}}
+
+| Year      | Title                                           | Institution                            |
+| --------- | ----------------------------------------------- | -------------------------------------- |
+| 2026-2028 | Specialised Foundation Doctor (Resident Doctor) | Royal Free London NHS Foundation Trust |
+
+{{% /overflow-table %}}
+
 ## Scholarship programmes
 
 - Awarded [**Cancer Research UK**](https://donate.cancerresearchuk.org) [**City of London**](https://www.colcc.ac.uk/) **MBPhD studentship** to fund PhD programme
