@@ -288,7 +288,9 @@ $$
 \end{aligned}
 $$
 
-Since $\frac{\sqrt{n}}{{\sigma}}(\bar{x} - \theta) \sim \mathcal{N}(0,1)$, and
+Since $\frac{\sqrt{n}}{{\sigma}}(\bar{x} - \theta) \sim \mathcal{N}(0,1)$ (the
+[sample mean of normal random variables is
+normal](https://en.wikipedia.org/wiki/Normal_distribution#Sample_mean)), and
 $\theta = 0$:
 
 $$P_{\theta = 0}\left( \frac{\sqrt{n}}{{\sigma}}|\bar{x}| \geq \sqrt{-2\log{c}} \right) = 2 \times P(Z \geq \sqrt{-2\log{c}})$$
