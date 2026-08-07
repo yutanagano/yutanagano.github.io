@@ -55,7 +55,7 @@ projects:
         url: https://pypi.org/project/symscan
       - type: crates
         url: https://crates.io/crates/symscan
-    stage: beta
+    stage: production
     language: Rust
     weight: 3
 
