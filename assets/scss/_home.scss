@@ -37,6 +37,17 @@
   letter-spacing: -0.1rem;
 }
 
+#tagline {
+  margin-top: var(--space-sm);
+  font-size: var(--font-lg);
+  color: var(--text-color-softer);
+}
+
+.tagline-dot {
+  margin: 0 0.45em;
+  color: var(--accent-color);
+}
+
 #links {
   margin-top: var(--space-md);
   justify-content: center;

@@ -27,7 +27,7 @@
 }
 
 @mixin entry-meta-text {
-  font-size: 0.875rem;
+  font-size: var(--font-sm);
   color: var(--text-color-softer);
 }
 
@@ -54,7 +54,7 @@
   display: inline-block;
   padding: 0.125rem 0.5rem;
   border-radius: 999px;
-  font-size: 0.75rem;
+  font-size: var(--font-xs);
   line-height: 1.4;
   background-color: var(--background-color-softer);
   color: var(--text-color-softer);
@@ -73,7 +73,7 @@
 @mixin entry-card-title {
   margin: 0;
   min-width: 0;
-  font-size: 1.3rem;
+  font-size: var(--font-lg);
   line-height: 1.25;
 }
 
